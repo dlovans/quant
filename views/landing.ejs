@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="headnav">
         <nav>
             <div class="logo-container">
                 <!-- <img class="logo" src="/img/quant-logo.svg" alt="Quant logo"> -->
@@ -36,7 +36,25 @@
             </div>
         </nav>
     </header>
-    <main>
+    <div class="modal-container">
+        <div class="signinModal">
+            <form class="signin-form" action="/signin" method="POST">
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="password">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <button id="confirmSignin">Sign in</button>
+            </form>
+            <div class="switchSignup">Don't have an account yet? <button class="signupModal2">Sign up</button>
+            </div>
+        </div>
+    </div>
+
+    <main class="main">
         <div class="hero-banner">
             <svg class="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                 zoomAndPan="magnify" viewBox="0 0 1440 809.999993" preserveAspectRatio="xMidYMid meet" version="1.0">
@@ -130,7 +148,7 @@
         </div>
 
     </main>
-    <footer>
+    <footer class="theFoot">
         <div class="footer-wrapper">
             <div class="brand-name">Quant.</div>
             <div class="info-container"></div>

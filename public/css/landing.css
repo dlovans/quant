@@ -8,6 +8,9 @@
 
 body {
     height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 1099;
 }
 
 header {
@@ -146,7 +149,7 @@ main {
 
 .brand-wrapper {
     position: relative;
-    z-index: 99;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     background-color: transparent;
@@ -173,14 +176,14 @@ main {
     flex-direction: column;
     align-items: center;
     padding: 50px 50px 0 50px;
-    z-index: 99;
+    z-index: 1;
 }
 
 .waitlist {
     height: 80%;
     width: 100%;
     border-radius: 10px;
-    background-color: #171717;
+    background-color: #171717df;
 }
 
 footer {
@@ -208,5 +211,51 @@ footer {
 }
 
 .info-container {
+    background-color: transparent;
+}
+
+.modal-overlay {
+    position: absolute;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #00ff844a;
+    z-index: 1099;
+}
+
+.signinModal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(80%, -150%) scaleY(0);
+    height: 800px;
+    width: 600px;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s;
+    z-index: 1100;
+    background-color: #171717df;
+}
+
+
+.modalBlur {
+    filter: blur(5px);
+}
+
+.signinModal-active {
+    transform: translate(-50%, -50%) scaleY(1);
+    overflow: hidden;
+}
+
+.signin-form {
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
     background-color: transparent;
 }
