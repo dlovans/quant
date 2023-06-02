@@ -311,6 +311,18 @@ footer {
     background-color: transparent;
 }
 
+.email::before {
+    content: "";
+    background: url('/img/email-svgrepo-com.png') no-repeat;
+    background-position: 5px;
+    background-size: 40px 40px;
+    position: relative;
+    top: 79px;
+    right: 195px;
+    height: 40px;
+    width: 40px;
+}
+
 .email label {
     background-color: transparent;
     font-size: 20px;
@@ -328,14 +340,20 @@ footer {
     font-size: 20px;
     padding: 0 10px 0 50px;
     outline: none;
-    background: url('/img/email-svgrepo-com.png') no-repeat;
-    background-position: 5px;
-    background-size: 40px 40px;
     background-color: #171717;
 
 }
 
-
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    background: url('/img/email-svgrepo-com.png') no-repeat;
+    background-position: 5px;
+    background-size: 40px 40px;
+    background-color: #171717;
+    transition: all 5000s ease-in-out 0s;
+}
 
 
 
