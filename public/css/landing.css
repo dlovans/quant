@@ -172,7 +172,7 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    width: 100%;
+    width: 90%;
     height: 50%;
     margin-top: 40px;
     border: none;
@@ -184,6 +184,47 @@ main {
     grid-row: 1/2;
     border-radius: 10px;
     background-color: #171717df;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ai-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 50%;
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+
+.ai-svg-wrapper {
+    background-color: #ffffff2f;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+}
+
+.ai-svg {
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+}
+
+.ai-text {
+    background-color: transparent;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    width: 75%;
+    text-align: center;
+    height: 50%;
+    margin-top: 10px;
 }
 
 .efficiency {
@@ -191,6 +232,47 @@ main {
     grid-row: 1/2;
     border-radius: 10px;
     background-color: #171717df;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.efficiency-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 50%;
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+
+.efficiency-wrapper {
+    background-color: #ffffff2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    border: none;
+    border-radius: 10px;
+}
+
+.efficiency-svg {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+}
+
+.efficiency-text {
+    background-color: transparent;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    width: 75%;
+    height: 50%;
+    margin-top: 10px;
 }
 
 .automated-investing {
@@ -198,6 +280,55 @@ main {
     grid-row: 2/3;
     border-radius: 10px;
     background-color: #171717df;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.investing-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 50%;
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+
+.investing-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    background-color: #ffffff2f;
+    border: none;
+    border-radius: 10px;
+}
+
+.investing-svg {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+
+}
+
+.investing-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: transparent;
+    text-align: center;
+    height: 50%;
+    width: 75%;
+    margin-top: 10px;
+}
+
+.investing-text::after {
+    content: " (Coming soon)";
+    font-size: 12px;
+    font-weight: 600;
+    vertical-align: super;
 }
 
 .simplicity {
@@ -205,6 +336,47 @@ main {
     grid-row: 2/3;
     border-radius: 10px;
     background-color: #171717df;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.simplicity-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 50%;
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+
+.simplicity-wrapper {
+    background-color: #ffffff2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    border: none;
+    border-radius: 10px;
+}
+
+.simplicity-svg {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+}
+
+.simplicity-text {
+    background-color: transparent;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    width: 75%;
+    text-align: center;
+    height: 50%;
+    margin-top: 10px;
 }
 
 .right-container {
