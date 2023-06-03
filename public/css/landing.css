@@ -273,7 +273,7 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(80%, -150%) scaleY(0);
-    height: 800px;
+    height: 700px;
     width: 600px;
     border: none;
     border-radius: 10px;
@@ -299,8 +299,22 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: transparent;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    margin-top: -150px;
+}
+
+.brand-title2 {
+    background-color: transparent;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.brand-title2::after {
+    content: "Quant.";
+    color: #00b960;
+    font-size: 28px;
+    font-weight: 600;
 }
 
 .email {
@@ -344,10 +358,10 @@ footer {
 
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
+.email input:-webkit-autofill,
+.email input:-webkit-autofill:hover,
+.email input:-webkit-autofill:focus,
+.email input:-webkit-autofill:active {
     background: url('/img/email-svgrepo-com.png') no-repeat;
     background-position: 5px;
     background-size: 40px 40px;
@@ -358,17 +372,95 @@ input:-webkit-autofill:active {
 
 
 .password {
-    width: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: transparent;
+    margin-top: -20px;
+}
+
+.password::before {
+    content: "";
+    background: url('/img/password-svgrepo-com.png') no-repeat;
+    background-position: 5px;
+    background-size: 30px 30px;
+    position: relative;
+    height: 40px;
+    width: 40px;
+    top: 79px;
+    right: 190px;
+}
+
+.password label {
+    background-color: transparent;
+    font-size: 20px;
+    color: #FFFFFF;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.password input {
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    height: 50px;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 0 10px 0 50px;
+    outline: none;
+    background-color: #171717;
+
+}
+
+.password input:-webkit-autofill,
+.password input:-webkit-autofill:hover,
+.password input:-webkit-autofill:focus,
+.password input:-webkit-autofill:active {
+    background: url('/img/password-svgrepo-com.png') no-repeat;
+    background-position: 5px;
+    background-size: 40px 40px;
+    background-color: #171717;
+    transition: all 5000s ease-in-out 0s;
+}
+
+#confirmSignin {
+    background-color: #00b960;
+    border: none;
+    width: 80%;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 50px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+#confirmSignin:hover {
+    background-color: #3cffa1;
+
 }
 
 .switchSignup {
     display: flex;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
     background-color: transparent;
-    height: 20px;
+    height: 50px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    margin-top: -100px;
 }
 
 .signupModal2 {
-    display: flex;
+    color: #00b960;
+    border: none;
+    font-size: 20px;
+    margin-left: 5px;
+    background-color: transparent;
+    cursor: pointer;
 }
