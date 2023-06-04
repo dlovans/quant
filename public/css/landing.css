@@ -6,8 +6,9 @@
     background-color: #111111;
 }
 
+
+
 body {
-    height: 100vh;
     width: 100%;
     position: relative;
     z-index: 1099;
@@ -112,13 +113,11 @@ nav {
 
 main {
     width: 100%;
-    height: calc(100vh - 100px);
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .hero-banner {
@@ -127,24 +126,29 @@ main {
     height: 100%;
     background-color: transparent;
     left: 30%;
+    overflow: hidden;
 }
 
 .svg {
     transform: scaleY(-1);
     background-color: transparent;
+    background-size: contain;
 }
 
 .content-wrapper {
     width: 90%;
+    height: 80vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 .left-container {
     width: 50%;
     padding: 50px 50px 0 50px;
     background-color: transparent;
+    height: 100%;
 }
 
 .brand-wrapper {
@@ -387,6 +391,7 @@ main {
     align-items: center;
     padding: 50px 50px 0 50px;
     z-index: 1;
+    height: 100%;
 }
 
 .waitlist {
@@ -396,11 +401,29 @@ main {
     background-color: #171717df;
 }
 
-footer {
-    position: absolute;
-    background-color: transparent;
-    bottom: 0;
+.pricing-container {
     width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-card {
+    height: 900px;
+    width: 600px;
+    background-color: #171717;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 100px -30px #00b960;
+    z-index: 1102;
+}
+
+
+footer {
+    background-color: transparent;
+    width: 100%;
+    height: 60px;
 }
 
 .footer-wrapper {
