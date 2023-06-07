@@ -30,30 +30,12 @@
                 <a class="link about" href="">About</a>
             </div>
             <div class="login">
-                <button class="sign-in">Sign In</button>
-                <button class="sign-up">Join</button>
+                <a class="sign-in" href="/signin">Sign In</a>
+                <a class="sign-up" href="/signup">Sign Up</a>
 
             </div>
         </nav>
     </header>
-    <div class="modal-container">
-        <div class="signinModal">
-            <form class="signin-form" action="/signin" method="POST">
-                <div class="brand-title2">Sign in to </div>
-                <div class="email">
-                    <label for="email">Email address</label>
-                    <input type="email" name="email" id="email">
-                </div>
-                <div class="password">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password">
-                </div>
-                <button id="confirmSignin">Sign in</button>
-            </form>
-            <div class="switchSignup">Don't have an account yet? <button class="signupModal2">Sign up</button>
-            </div>
-        </div>
-    </div>
     <main class="main">
         <div class="hero-banner">
             <svg class="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -269,21 +251,53 @@
             <div class="pricing-table-wrapper">
                 <div class="pricing-card">
                     <div class="price-integer">$49/month</div>
-                    <table class="pricing-table">
+                    <div class="billed-anually">Billed annually</div>
+                    <div class="pricing-table">
+                        <div class="table-header table-common-unit">Features</div>
 
-                    </table>
+                        <div class="checkmark checkmarkOne"><%- include('./subtemplates/checkmark') %></div>
+                        <div class="row rowOne-textOne">+25.000 companies</div>
+                        <div class="checkmark checkmarkTwo"><%- include('./subtemplates/checkmark') %></div>
+                        <div class="row rowOne-textTwo">Fundamental Analysis</div>
+
+                        <div class="checkmark checkmarkThree"><%- include('./subtemplates/checkmark') %></div>
+                        <div class="row rowTwo-textOne">Powered by AI</div>
+                        <div class="checkmark checkmarkFour"><%- include('./subtemplates/checkmark') %></div>
+                        <div class="row rowTwo-textTwo">Automated investing</div>
+
+                        <div class="checkmark checkmarkFive"><%- include('./subtemplates/checkmark') %></div>
+                        <div class="row rowThree-textOne">Email/SMS alerting</div>
+                        <div class="checkmark checkmarkSix"><%- include('./subtemplates/checkmark') %></div>
+                        <div class="row rowThree-textTwo">Risk-adjusted portfolio</div>
+
+                        <div class="checkmark checkmarkSeven"><%- include('./subtemplates/checkmark') %></div>
+                        <div class="row rowFour-textOne">Smart watchlists</div>
+                        <div class="checkmark checkmarkEight"><%- include('./subtemplates/checkmark') %></div>
+                        <div class="row rowFour-textTwo">Automatic rebalancing</div>
+
+                    </div>
                     <div class="pricing-cta-wrapper">
-                        <button class="pricing-cta sign-up">Join</button>
+                        <a href="/signup" class="pricing-cta sign-up">Join</a>
                     </div>
                 </div>
             </div>
-
+        </div>
+        <div class="faq-container">
+            <div class="faq-title">Frequently Asked Questions</div>
+            <div class="faq-wrapper">
+                
+            </div>
         </div>
     </main>
     <footer class="theFoot">
-        <div class="footer-wrapper">
+        <div class="footer-container">
             <div class="brand-name">Quant.</div>
-            <div class="info-container"></div>
+            <div class="legal-container">
+                <a href="/legal" class="legal">Legal</a>
+                <a href="/tos" class="tos">Terms of Serivce</a>
+                <a href="/pp" class="privacy-policy">Privacy Policy</a>
+            </div>
+            <div class="copyright">Copyright &copy; 2023</div>
         </div>
     </footer>
 
