@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #111111;
+    background-color: #000f1d;
 }
 
 
@@ -195,7 +195,7 @@ main {
     grid-column: 1/2;
     grid-row: 1/2;
     border-radius: 10px;
-    background-color: #171717df;
+    background-color: #04293a91;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -212,7 +212,7 @@ main {
 }
 
 .ai-svg-wrapper {
-    background-color: #ffffff2f;
+    background-color: #04293a91;
     width: 75px;
     height: 75px;
     display: flex;
@@ -243,7 +243,7 @@ main {
     grid-column: 2/3;
     grid-row: 1/2;
     border-radius: 10px;
-    background-color: #171717df;
+    background-color: #04293a91;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -260,7 +260,7 @@ main {
 }
 
 .efficiency-wrapper {
-    background-color: #ffffff2f;
+    background-color: #04293a91;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -291,7 +291,7 @@ main {
     grid-column: 1/2;
     grid-row: 2/3;
     border-radius: 10px;
-    background-color: #171717df;
+    background-color: #04293a91;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -313,7 +313,7 @@ main {
     align-items: center;
     width: 75px;
     height: 75px;
-    background-color: #ffffff2f;
+    background-color: #04293a91;
     border: none;
     border-radius: 10px;
 }
@@ -348,7 +348,7 @@ main {
     grid-column: 2/3;
     grid-row: 2/3;
     border-radius: 10px;
-    background-color: #171717df;
+    background-color: #04293a91;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -365,7 +365,7 @@ main {
 }
 
 .simplicity-wrapper {
-    background-color: #ffffff2f;
+    background-color: #04293a91;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -407,7 +407,7 @@ main {
     height: 80%;
     width: 100%;
     border-radius: 10px;
-    background-color: #171717df;
+    background-color: #04293a91;
 }
 
 .pricing-container {
@@ -441,7 +441,7 @@ main {
 
 .billing-selector {
     position: relative;
-    background-color: #171717;
+    background-color: #04293a91;
     border-radius: 50px;
     width: 400px;
     height: 75px;
@@ -540,7 +540,7 @@ main {
 .pricing-card {
     height: 800px;
     width: 50%;
-    background-color: #171717;
+    background-color: #04293a91;
     border: none;
     z-index: 1102;
     display: flex;
@@ -754,6 +754,56 @@ main {
     border-radius: 0;
 }
 
+
+.faq-container {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 0;
+}
+
+.faq-wrapper {
+    background-color: #04293a91;
+    height: max-content;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 20px 20px;
+    border-radius: 10px;
+}
+
+.faq-title {
+    background-color: transparent;
+    color: #00b960;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 30px 0;
+}
+
+.faq,
+.q-question,
+.q-answer {
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+.faq {
+    width: 90%;
+    height: max-content;
+    padding: 20px;
+    background-color: #04293a91;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.q-question {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+
 footer {
     background-color: transparent;
     width: 100%;
@@ -814,21 +864,21 @@ footer {
     justify-content: center;
 }
 
-.legal-container a {
+.ft-link {
     text-decoration: none;
     color: #FFFFFF;
 }
 
 .legal {
-    margin-right: 10px;
+    margin-left: auto;
 }
 
 .tos {
-    margin: 0 5px 0 5px;
+    margin: 0 15px 0 15px;
 }
 
 .privacy-policy {
-    margin-left: 10px;
+    margin-right: auto;
 }
 
 .copyright {
