@@ -229,7 +229,7 @@
                 </div>
             </div>
             <div class="right-container">
-                <div class="waitlist">
+                <div class="platform-banner">
 
                 </div>
             </div>
@@ -238,7 +238,7 @@
         <div class="pricing-container">
             <div class="pricing-info">
                 <div class="pricing-title">Pricing & Plans</div>
-                <div class="pricing-text">Instant Access. Cancel Anytime</div>
+                <div class="pricing-text">Instant Access. Cancel Anytime.</div>
             </div>
             <div class="billing-selector">
                 <div class="billing-text monthly">Monthly</div>
@@ -254,7 +254,6 @@
                     <div class="billed-anually">Billed annually</div>
                     <div class="pricing-table">
                         <div class="table-header table-common-unit">Features</div>
-
                         <div class="checkmark checkmarkOne"><%- include('./subtemplates/checkmark') %></div>
                         <div class="row rowOne-textOne">+25.000 companies</div>
                         <div class="checkmark checkmarkTwo"><%- include('./subtemplates/checkmark') %></div>
@@ -274,7 +273,6 @@
                         <div class="row rowFour-textOne">Smart watchlists</div>
                         <div class="checkmark checkmarkEight"><%- include('./subtemplates/checkmark') %></div>
                         <div class="row rowFour-textTwo">Automatic rebalancing</div>
-
                     </div>
                     <div class="pricing-cta-wrapper">
                         <a href="/signup" class="pricing-cta sign-up">Join</a>
@@ -286,54 +284,83 @@
             <div class="faq-wrapper">
                 <div class="faq-title">Frequently Asked Questions</div>
                 <div class="faq question-one">
-                    <div class="q-question">How does the AI perform fundamental analysis of public companies?</div>
-                    <div class="q-answer">Our AI performs comprehensive fundamental analysis, including qualitative,
-                        quantitative, market, and valuation analysis - from a vast array of data sources.</div>
+                    <div class="q-wrapper">
+                        <div class="q-question">How does the AI perform fundamental analysis of public companies?</div>
+                        <div class="q-answer">Our AI performs comprehensive fundamental analysis, including qualitative,
+                            quantitative, market, and valuation analysis - from a vast array of data sources.</div>
+                    </div>
+                    <span class="faq-arrow"><%- include('./subtemplates/arrow') %></span>
                 </div>
                 <div class="faq question-two">
-                    <div class="q-question">How accurate are the investment recommendations provided by the AI?</div>
-                    <div class="q-answer">Our AI is meticulously optimized for high predictive accuracy. It's crucial to
-                        note, however, that investing inherently carries some level of risk. Therefore, our AI's
-                        recommendations should be utilized as part of a well-considered investment strategy.</div>
+                    <div class="q-wrapper">
+                        <div class="q-question">How accurate are the investment recommendations provided by the AI?
+                        </div>
+                        <div class="q-answer">Our AI is meticulously optimized for high predictive accuracy. It's
+                            crucial to
+                            note, however, that investing inherently carries some level of risk. Therefore, our AI's
+                            recommendations should be utilized as part of a well-considered investment strategy.</div>
+                    </div>
+                    <span class="faq-arrow"><%- include('./subtemplates/arrow') %></span>
                 </div>
                 <div class="faq question-three">
-                    <div class="q-question">How does the platform simplify the investment process?</div>
-                    <div class="q-answer">The platform distills complex financial analysis into clear, user-friendly
-                        recommendations: invest, avoid, hold, or sell. Our intuitive interface allows for easy portfolio
-                        management and efficient decision-making.
+                    <div class="q-wrapper">
+                        <div class="q-question">How does the platform simplify the investment process?</div>
+                        <div class="q-answer">The platform distills complex financial analysis into clear, user-friendly
+                            recommendations: invest, avoid, hold, or sell. Our intuitive interface allows for easy
+                            portfolio
+                            management and efficient decision-making.
+                        </div>
                     </div>
+                    <span class="faq-arrow"><%- include('./subtemplates/arrow') %></span>
                 </div>
                 <div class="faq question-four">
-                    <div class="q-question">How often are the AI's analysis and recommendations updated?
+                    <div class="q-wrapper">
+                        <div class="q-question">How often are the AI's analysis and recommendations updated?
+                        </div>
+                        <div class="q-answer">We regularly update our AI's analysis and recommendations, ensuring they
+                            reflect the most current data. This way, users are equipped with the most recent information
+                            for
+                            their investment decisions.
+                            <br>
+                            For large-cap companies, fundamental analysis is made once each month. For mid- and
+                            small-cap
+                            companies, fundamental analysis are made weekly.
+                        </div>
                     </div>
-                    <div class="q-answer">We regularly update our AI's analysis and recommendations, ensuring they
-                        reflect the most current data. This way, users are equipped with the most recent information for
-                        their investment decisions.
-                        <br>
-                        For large-cap companies, fundamental analysis is made once each month. For mid- and small-cap
-                        companies, fundamental analysis are made weekly.
-                    </div>
+                    <span class="faq-arrow"><%- include('./subtemplates/arrow') %></span>
                 </div>
                 <div class="faq question-five">
-                    <div class="q-question">Is the platform suitable for novice investors?</div>
-                    <div class="q-answer">Absolutely. Our platform is crafted with time-efficiency in mind, making
-                        investing accessible for busy individuals. It streamlines complex financial insights into
-                        easy-to-understand recommendations. With just a few clicks, users can leverage our AI's advanced
-                        analytics, saving considerable time while making informed investment decisions.</div>
+                    <div class="q-wrapper">
+                        <div class="q-question">Is the platform suitable for novice investors?</div>
+                        <div class="q-answer">Absolutely. Our platform is crafted with time-efficiency in mind, making
+                            investing accessible for busy individuals. It streamlines complex financial insights into
+                            easy-to-understand recommendations. With just a few clicks, users can leverage our AI's
+                            advanced
+                            analytics, saving considerable time while making informed investment decisions.</div>
+                    </div>
+                    <span class="faq-arrow"><%- include('./subtemplates/arrow') %></span>
                 </div>
                 <div class="faq question-six">
-                    <div class="q-question">Are the AI-generated analyses reviewed by financial analysts before
-                        publication?</div>
-                    <div class="q-answer">Yes, each AI-generated analysis undergoes a rigorous review by our team of
-                        financial analysts before publication. This process ensures the quality of our recommendations,
-                        marrying the best of AI-driven insights with human expertise for a more robust and balanced
-                        investment strategy.</div>
+                    <div class="q-wrapper">
+                        <div class="q-question">Are the AI-generated analyses reviewed by financial analysts before
+                            publication?</div>
+                        <div class="q-answer">Yes, each AI-generated analysis undergoes a rigorous review by our team of
+                            financial analysts before publication. This process ensures the quality of our
+                            recommendations,
+                            marrying the best of AI-driven insights with human expertise for a more robust and balanced
+                            investment strategy.</div>
+                    </div>
+                    <span class="faq-arrow"><%- include('./subtemplates/arrow') %></span>
                 </div>
                 <div class="faq question-seven">
-                    <div class="q-question">Can I cancel my subscription at any time?</div>
-                    <div class="q-answer">Yes, we believe in flexibility for our users. You are free to cancel your
-                        subscription at any time. We're here to support your investment journey, so you can manage your
-                        subscription to best fit your needs.</div>
+                    <div class="q-wrapper">
+                        <div class="q-question">Can I cancel my subscription at any time?</div>
+                        <div class="q-answer">Yes, we believe in flexibility for our users. You are free to cancel your
+                            subscription at any time. We're here to support your investment journey, so you can manage
+                            your
+                            subscription to best fit your needs.</div>
+                    </div>
+                    <span class="faq-arrow"><%- include('./subtemplates/arrow') %></span>
                 </div>
             </div>
         </div>
@@ -341,6 +368,7 @@
     <footer class="theFoot">
         <div class="footer-container">
             <div class="brand-name">Quant.</div>
+            <a href="/disclaimer" class="ft-link disclaimer">Disclaimer</a>
             <a href="/legal" class="ft-link legal">Legal</a>
             <a href="/tos" class="ft-link tos">Terms of Serivce</a>
             <a href="/pp" class="ft-link privacy-policy">Privacy Policy</a>

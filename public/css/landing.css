@@ -53,7 +53,7 @@ nav {
 .link {
     text-decoration: none;
     color: #FFFFFF;
-    font-size: 22px;
+    font-size: 18px;
     text-align: center;
     font-weight: 600;
     transition: color .5s;
@@ -76,7 +76,7 @@ nav {
     border: none;
     height: 50px;
     width: 100px;
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 10px;
     color: #FFFFFF;
     font-weight: 600;
@@ -100,7 +100,7 @@ nav {
     border: none;
     height: 50px;
     width: 100px;
-    font-size: 20px;
+    font-size: 18px;
     color: #FFFFFF;
     font-weight: 600;
     margin-right: 10px;
@@ -176,7 +176,7 @@ main {
 
 .brand-text {
     background-color: transparent;
-    font-size: 30px;
+    font-size: 26px;
     color: #FFFFFF;
 }
 
@@ -231,7 +231,7 @@ main {
 .ai-text {
     background-color: transparent;
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     width: 75%;
     text-align: center;
@@ -279,7 +279,7 @@ main {
 .efficiency-text {
     background-color: transparent;
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     text-align: center;
     width: 75%;
@@ -326,7 +326,7 @@ main {
 }
 
 .investing-text {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     color: #FFFFFF;
     background-color: transparent;
@@ -338,7 +338,7 @@ main {
 
 .investing-text::after {
     content: " (Coming soon)";
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 600;
     vertical-align: super;
     color: #00b960;
@@ -384,7 +384,7 @@ main {
 .simplicity-text {
     background-color: transparent;
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     width: 75%;
     text-align: center;
@@ -403,19 +403,19 @@ main {
     height: 100%;
 }
 
-.waitlist {
+.platform-banner {
     height: 80%;
     width: 100%;
-    border-radius: 10px;
-    background-color: #04293a91;
+    background-color: transparent;
 }
 
 .pricing-container {
     width: 100%;
-    height: 100svh;
+    height: max-content;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 100px 0;
 }
 
 .pricing-info {
@@ -427,14 +427,14 @@ main {
 }
 
 .pricing-title {
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 700;
     color: #00b960;
     margin-bottom: 10px;
 }
 
 .pricing-text {
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 600;
     color: #FFFFFF;
 }
@@ -449,12 +449,13 @@ main {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
+
 }
 
 .billing-text {
     background-color: transparent;
     color: #FFFFFF;
-    font-size: 24px;
+    font-size: 18px;
     border-radius: 30px;
     height: 100%;
     display: flex;
@@ -500,7 +501,7 @@ main {
 }
 
 .save-twenty {
-    font-size: 14px;
+    font-size: 12px;
     background-color: #FFFFFF;
     box-shadow: 0 0 6px -2px #000000;
     border-radius: 30px;
@@ -538,8 +539,8 @@ main {
 }
 
 .pricing-card {
-    height: 800px;
-    width: 50%;
+    height: max-content;
+    width: 40%;
     background-color: #04293a91;
     border: none;
     z-index: 1102;
@@ -552,19 +553,21 @@ main {
 
 .price-integer {
     position: relative;
-    height: 15%;
+    height: 25%;
     width: 100%;
     background-color: transparent;
     color: #00b960;
-    font-size: 36px;
+    font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 50px 0;
 }
 
 .price-integer::after {
     content: '';
     position: absolute;
+    top: 75px;
     bottom: 0;
     height: 2px;
     width: 100%;
@@ -588,12 +591,13 @@ main {
     display: none;
     position: absolute;
     left: 50%;
-    top: 9%;
+    top: 80px;
     background-color: transparent;
     color: #FFFFFF;
     transform: translate(-50%, 50%);
     font-weight: 600;
     margin-top: 5px;
+    font-size: 12px;
 }
 
 .billed-anually-active {
@@ -601,16 +605,16 @@ main {
 }
 
 .pricing-table {
-    height: 70%;
     width: 100%;
     background-color: transparent;
     display: grid;
     grid-template-columns: 1fr 1fr 3fr 1fr 3fr 1fr;
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    margin: 50px 0;
 }
 
 .table-header {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 600;
     color: #FFFFFF;
     background-color: transparent;
@@ -619,6 +623,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 50px;
 }
 
 .checkmark {
@@ -630,40 +635,41 @@ main {
 
 .checkmark-svg {
     background-color: transparent;
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
 }
 
 .row {
     background-color: transparent;
     color: #FFFFFF;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 600;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding-left: 10px;
+    height: 60px;
 }
 
 /* Row 1 start */
 .checkmarkOne {
-    grid-row: 3/4;
+    grid-row: 2/3;
     grid-column: 2/3;
 }
 
 .rowOne-textOne {
-    grid-row: 3/4;
+    grid-row: 2/3;
     grid-column: 3/4;
 
 }
 
 .checkmarkTwo {
-    grid-row: 3/4;
+    grid-row: 2/3;
     grid-column: 4/5;
 }
 
 .rowOne-textTwo {
-    grid-row: 3/4;
+    grid-row: 2/3;
     grid-column: 5/6;
 }
 
@@ -671,22 +677,22 @@ main {
 
 /* Row 2 start */
 .checkmarkThree {
-    grid-row: 4/5;
+    grid-row: 3/4;
     grid-column: 2/3;
 }
 
 .rowTwo-textOne {
-    grid-row: 4/5;
+    grid-row: 3/4;
     grid-column: 3/4;
 }
 
 .checkmarkFour {
-    grid-row: 4/5;
+    grid-row: 3/4;
     grid-column: 4/5;
 }
 
 .rowTwo-textTwo {
-    grid-row: 4/5;
+    grid-row: 3/4;
     grid-column: 5/6;
 }
 
@@ -695,22 +701,22 @@ main {
 
 /* Row 3 start */
 .checkmarkFive {
-    grid-row: 5/6;
+    grid-row: 4/5;
     grid-column: 2/3;
 }
 
 .rowThree-textOne {
-    grid-row: 5/6;
+    grid-row: 4/5;
     grid-column: 3/4;
 }
 
 .checkmarkSix {
-    grid-row: 5/6;
+    grid-row: 4/5;
     grid-column: 4/5;
 }
 
 .rowThree-textTwo {
-    grid-row: 5/6;
+    grid-row: 4/5;
     grid-column: 5/6;
 }
 
@@ -718,40 +724,41 @@ main {
 
 /* Row 4 start */
 .checkmarkSeven {
-    grid-row: 6/7;
+    grid-row: 5/6;
     grid-column: 2/3;
 }
 
 .rowFour-textOne {
-    grid-row: 6/7;
+    grid-row: 5/6;
     grid-column: 3/4;
 }
 
 .checkmarkEight {
-    grid-row: 6/7;
+    grid-row: 5/6;
     grid-column: 4/5;
 }
 
 .rowFour-textTwo {
-    grid-row: 6/7;
+    grid-row: 5/6;
     grid-column: 5/6;
 }
 
 /* Row 4 end */
 
 .pricing-cta-wrapper {
-    height: 15%;
     width: 100%;
     background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    margin: 50px 0 100px 0;
 }
 
 
 .pricing-cta {
     width: 50%;
     border-radius: 0;
+    font-size: 16px;
 }
 
 
@@ -766,7 +773,7 @@ main {
 .faq-wrapper {
     background-color: #04293a91;
     height: max-content;
-    width: 60%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -777,7 +784,7 @@ main {
 .faq-title {
     background-color: transparent;
     color: #00b960;
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 600;
     margin: 30px 0;
 }
@@ -789,6 +796,7 @@ main {
     color: #FFFFFF;
 }
 
+
 .faq {
     width: 90%;
     height: max-content;
@@ -796,13 +804,65 @@ main {
     background-color: #04293a91;
     margin-bottom: 10px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.q-wrapper {
+    background-color: transparent;
+    width: 90%;
+    outline: none;
 }
 
 .q-question {
-    font-size: 26px;
+    font-size: 18px;
     font-weight: 600;
+    outline: none;
+    transition: margin-bottom 600ms;
 }
 
+.q-question-active {
+    margin-bottom: 30px;
+}
+
+.faq-arrow {
+    width: 10%;
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+
+}
+
+.arrow {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    transform: rotate(270deg);
+    transition: all 400ms;
+}
+
+.arrow-active {
+    transform: rotate(0deg);
+}
+
+
+.q-answer {
+    max-height: 0px;
+    opacity: 0;
+    transition: all 300ms;
+    font-size: 16px;
+}
+
+.q-answer-active {
+    max-height: 200px;
+    opacity: 1;
+}
 
 footer {
     background-color: transparent;
@@ -857,20 +917,17 @@ footer {
     padding-left: 30px;
 }
 
-.legal-container {
-    background-color: transparent;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-}
-
 .ft-link {
     text-decoration: none;
-    color: #FFFFFF;
+    color: #a9a8a8;
+}
+
+.disclaimer {
+    margin-left: auto;
 }
 
 .legal {
-    margin-left: auto;
+    margin: 0 0 0 15px;
 }
 
 .tos {

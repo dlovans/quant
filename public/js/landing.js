@@ -28,3 +28,18 @@ yearly.addEventListener('click', function () {
         defaultBoolean = false
     }
 })
+
+
+
+// Faq functionality
+
+const faqCards = document.querySelectorAll('.faq')
+
+for (let faqCard of faqCards) {
+    faqCard.addEventListener('click', function () {
+        console.log(faqCard.childNodes)
+        faqCard.childNodes[3].childNodes[0].classList.toggle('arrow-active')
+        faqCard.childNodes[1].childNodes[3].classList.toggle('q-answer-active')
+        faqCard.childNodes[1].childNodes[1].classList.toggle('q-question-active')
+    })
+}
