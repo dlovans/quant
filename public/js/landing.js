@@ -43,3 +43,33 @@ for (let faqCard of faqCards) {
         faqCard.childNodes[1].childNodes[1].classList.toggle('q-question-active')
     })
 }
+
+// Menu button
+
+const menuBtn = document.querySelector('.menu-button')
+const mainMenu = document.querySelector('.menu-container')
+const lineWrapper = document.querySelector('.line-wrapper')
+const lineOne = document.querySelector('.line1')
+const lineTwo = document.querySelector('.line2')
+const lineThree = document.querySelector('.line3')
+
+menuBtn.addEventListener('click', function (e) {
+    lineOne.classList.toggle('line1-active')
+    lineTwo.classList.toggle('line2-active')
+    lineThree.classList.toggle('line3-active')
+    mainMenu.classList.toggle('menu-container-active')
+    document.body.classList.toggle('overflow-menu-active')
+})
+
+
+document.addEventListener('mousedown', function (e) {
+    if (mainMenu.classList.contains('menu-container-active')) {
+        if (e.target !== mainMenu && e.target !== lineWrapper && e.target !== menuBtn && e.target !== lineOne && e.target !== lineTwo && e.target !== lineThree) {
+            lineOne.classList.toggle('line1-active');
+            lineTwo.classList.toggle('line2-active');
+            lineThree.classList.toggle('line3-active');
+            mainMenu.classList.toggle('menu-container-active');
+            document.body.classList.toggle('overflow-menu-active');
+        }
+    }
+});
