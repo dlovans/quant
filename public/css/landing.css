@@ -10,14 +10,17 @@
 @media screen and (max-width:280px) {
     body {
         position: relative;
+        overflow-x: hidden;
     }
 
     .overflow-menu-active {
-        overflow: hidden;
+        overflow-y: hidden;
     }
 
     .headnav {
+        position: relative;
         width: 100%;
+        z-index: 4;
     }
 
     nav {
@@ -45,6 +48,7 @@
         height: 40px;
         width: 40px;
         fill: #00b960;
+        background-color: transparent;
     }
 
     .links-container {
@@ -62,18 +66,50 @@
         transform: translateX(150%);
         transition: transform 500ms;
         top: 0;
-        right: 0;
         height: 100svh;
         width: 100%;
         z-index: 4;
         transition: all 500ms;
-        justify-content: center;
-        border-left: 2px solid #00b960;
+        justify-content: flex-start;
+        background-color: #2C3E50;
     }
 
     .menu-container-active {
         transform: translateX(25%);
     }
+
+    .link {
+        background-color: transparent;
+        text-decoration: none;
+        outline: none;
+        color: #FFFFFF;
+        font-size: 20px;
+        font-weight: 600;
+        border-bottom: 1px solid #00b96067;
+        height: 50px;
+        padding-left: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .link:active {
+        background-color: #00b960;
+    }
+
+    .news {
+        margin-top: 60px;
+    }
+
+    .sign-up {
+        color: #00b960;
+        transition: all 500ms;
+    }
+
+    .sign-up:active {
+        color: #FFFFFF;
+    }
+
+
 
     .menu-button {
         height: 50px;
@@ -135,6 +171,136 @@
     }
 
 
+    .main {
+        position: relative;
+        width: 100%;
+        top: 60px;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-banner {
+        position: relative;
+        width: 100%;
+        background-color: transparent;
+        z-index: 0;
+    }
+
+    .svg {
+        position: absolute;
+        width: 100%;
+        transform: scaleY(-1) scale(2);
+        background-color: transparent;
+        top: 100px;
+        z-index: 0;
+    }
+
+    .content-wrapper {
+        position: relative;
+        background-color: transparent;
+    }
+
+    .left-container {
+        background-color: transparent;
+    }
+
+
+    .brand-wrapper {
+        background-color: transparent;
+        height: max-content;
+        padding: 0 10px;
+    }
+
+    .brand-title {
+        background-color: transparent;
+        color: #00b960;
+        margin-bottom: 20px;
+    }
+
+    .brand-text {
+        background-color: transparent;
+        color: #FFFFFF;
+        font-size: 14px;
+    }
+
+    .features-container {
+        margin-top: 200px;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ai-analysis,
+    .efficiency,
+    .automated-investing,
+    .simplicity {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 175px;
+        background-color: #04293a91;
+        border-radius: 10px;
+    }
+
+    .ai-analysis,
+    .efficiency,
+    .automated-investing {
+        margin-bottom: 30px;
+    }
+
+    .ai-container,
+    .efficiency-container,
+    .investing-container,
+    .simplicity-container,
+    .ai-svg-wrapper,
+    .efficiency-wrapper,
+    .investing-wrapper,
+    .simplicity-wrapper,
+    .ai-text,
+    .efficiency-text,
+    .investing-text,
+    .simplicity-text {
+        background-color: transparent;
+    }
+
+    .ai-text,
+    .efficiency-text,
+    .investing-text,
+    .simplicity-text {
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 5px;
+        width: 80%;
+    }
+
+
+    .ai-svg-wrapper,
+    .efficiency-wrapper,
+    .investing-wrapper,
+    .simplicity-wrapper {
+        margin-bottom: 5px;
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+        background-color: #04293a91;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ai-svg,
+    .efficiency-svg,
+    .investing-svg,
+    .simplicity-svg {
+        height: 50px;
+        width: 50px;
+        background-color: transparent;
+    }
 }
 
 
