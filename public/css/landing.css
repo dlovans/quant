@@ -647,6 +647,85 @@
         align-items: center;
         font-weight: 600;
     }
+
+    .faq-container {
+        margin-top: 20vh;
+        height: max-content;
+        display: flex;
+        justify-content: center;
+        background-color: transparent;
+    }
+
+    .faq-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        background-color: #04293a91;
+        border-radius: 10px;
+    }
+
+    .faq-title {
+        color: #00b960;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .faq-title,
+    .q-wrapper,
+    .q-question,
+    .q-answer,
+    .faq-arrow,
+    .arrow {
+        background-color: transparent;
+    }
+
+    .faq {
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: #04293a91;
+        height: max-content;
+    }
+
+    .q-question,
+    .q-answer {
+        color: #FFFFFF;
+    }
+
+    .q-question {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+
+    .q-answer {
+        display: none;
+        font-size: 12px;
+        margin-top: 0px;
+    }
+
+    .q-answer-active {
+        display: block;
+        margin-top: 20px;
+    }
+
+
+    .arrow {
+        height: 20px;
+        width: 20px;
+        transform: rotate(270deg);
+        transition: all 400ms;
+        margin-left: 5px;
+    }
+
+    .arrow-active {
+        transform: rotate(0deg);
+    }
+
 }
 
 
@@ -1421,6 +1500,7 @@
         flex-direction: column;
         align-items: center;
         margin: 5% 0;
+        width: 100%;
     }
 
     .faq-wrapper {
@@ -1475,16 +1555,12 @@
         font-size: 18px;
         font-weight: 600;
         outline: none;
-        transition: margin-bottom 600ms;
     }
 
-    .q-question-active {
-        margin-bottom: 30px;
-    }
 
     .faq-arrow {
         width: 10%;
-        height: 63px;
+        height: max-content;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1506,15 +1582,13 @@
 
 
     .q-answer {
-        max-height: 0px;
-        opacity: 0;
-        transition: all 300ms;
+        display: none;
         font-size: 16px;
+        margin-top: 20px;
     }
 
     .q-answer-active {
-        max-height: 200px;
-        opacity: 1;
+        display: block;
     }
 
     footer {
