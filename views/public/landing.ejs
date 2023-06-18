@@ -26,16 +26,16 @@
                 </svg>
             </div>
             <div class="links-container">
-                <a class="link news" href="">News</a>
-                <a class="link about" href="">About</a>
+                <a class="link news" href="/blog">Blog</a>
+                <a class="link about" href="/about">About</a>
             </div>
             <div class="login">
                 <a class="sign-in" href="/signin">Sign In</a>
                 <a class="sign-up" href="/signup">Sign Up</a>
             </div>
             <div class="menu-container">
-                <a class="link news" href="">News</a>
-                <a class="link about" href="">About</a>
+                <a class="link news" href="/blog">Blog</a>
+                <a class="link about" href="/about">About</a>
                 <a class="link sign-in" href="/signin">Sign In</a>
                 <a class="link sign-up" href="/signup">Sign Up</a>
             </div>
@@ -50,7 +50,7 @@
     </header>
     <main class="main">
         <div class="hero-banner">
-            <%- include('./subtemplates/processor-nodes') %>
+            <%- include('./partials/processor-nodes') %>
         </div>
         <div class="content-wrapper">
             <div class="left-container">
@@ -68,7 +68,7 @@
                     <div class="ai-analysis">
                         <div class="ai-container">
                             <div class="ai-svg-wrapper">
-                                <%- include('./subtemplates/ai-svg') %>
+                                <%- include('./partials/ai-svg') %>
                             </div>
                         </div>
                         <div class="ai-text">In-depth stock insights powered by AI.</div>
@@ -76,7 +76,7 @@
                     <div class="efficiency">
                         <div class="efficiency-container">
                             <div class="efficiency-wrapper">
-                                <%- include('./subtemplates/efficiency-svg') %>
+                                <%- include('./partials/efficiency-svg') %>
                             </div>
                         </div>
                         <div class="efficiency-text">Streamlined process for rapid, high-quality investment insights.
@@ -85,7 +85,7 @@
                     <div class="automated-investing">
                         <div class="investing-container">
                             <div class="investing-wrapper">
-                                <%- include('./subtemplates/investing-svg') %>
+                                <%- include('./partials/investing-svg') %>
                             </div>
                         </div>
                         <div class="investing-text">Option for automated investing and portfolio management.</div>
@@ -93,7 +93,7 @@
                     <div class="simplicity">
                         <div class="simplicity-container">
                             <div class="simplicity-wrapper">
-                                <%- include('./subtemplates/simplicity-svg') %>
+                                <%- include('./partials/simplicity-svg') %>
                             </div>
                         </div>
                         <div class="simplicity-text">User-friendly tools making investing as easy as checking emails.
@@ -126,57 +126,57 @@
                     <div class="price-integer">$49/month</div>
                     <div class="billed-anually">Billed annually</div>
                     <div class="pricing-table">
-                        <div class="checkmark checkmarkOne"><%- include('./subtemplates/checkmark') %></div>
+                        <div class="checkmark checkmarkOne"><%- include('./partials/checkmark') %></div>
                         <div class="row rowOne-textOne">+25.000 companies</div>
-                        <div class="checkmark checkmarkTwo"><%- include('./subtemplates/checkmark') %></div>
+                        <div class="checkmark checkmarkTwo"><%- include('./partials/checkmark') %></div>
                         <div class="row rowOne-textTwo">Fundamental Analysis</div>
 
-                        <div class="checkmark checkmarkThree"><%- include('./subtemplates/checkmark') %></div>
+                        <div class="checkmark checkmarkThree"><%- include('./partials/checkmark') %></div>
                         <div class="row rowTwo-textOne">Powered by AI</div>
-                        <div class="checkmark checkmarkFour"><%- include('./subtemplates/checkmark') %></div>
+                        <div class="checkmark checkmarkFour"><%- include('./partials/checkmark') %></div>
                         <div class="row rowTwo-textTwo">Automated investing</div>
 
-                        <div class="checkmark checkmarkFive"><%- include('./subtemplates/checkmark') %></div>
+                        <div class="checkmark checkmarkFive"><%- include('./partials/checkmark') %></div>
                         <div class="row rowThree-textOne">Email/SMS alerting</div>
-                        <div class="checkmark checkmarkSix"><%- include('./subtemplates/checkmark') %></div>
+                        <div class="checkmark checkmarkSix"><%- include('./partials/checkmark') %></div>
                         <div class="row rowThree-textTwo">Risk-adjusted portfolio</div>
 
-                        <div class="checkmark checkmarkSeven"><%- include('./subtemplates/checkmark') %></div>
+                        <div class="checkmark checkmarkSeven"><%- include('./partials/checkmark') %></div>
                         <div class="row rowFour-textOne">Smart watchlists</div>
-                        <div class="checkmark checkmarkEight"><%- include('./subtemplates/checkmark') %></div>
+                        <div class="checkmark checkmarkEight"><%- include('./partials/checkmark') %></div>
                         <div class="row rowFour-textTwo">Automatic rebalancing</div>
                     </div>
                     <div class="pricing-table-mini">
                         <div class="row-wrapper">
-                            <div class="checkmark checkmarkOne"><%- include('./subtemplates/checkmark') %></div>
+                            <div class="checkmark checkmarkOne"><%- include('./partials/checkmark') %></div>
                             <div class="row rowOne-textOne">+25.000 companies</div>
                         </div>
                         <div class="row-wrapper">
-                            <div class="checkmark checkmarkTwo"><%- include('./subtemplates/checkmark') %></div>
+                            <div class="checkmark checkmarkTwo"><%- include('./partials/checkmark') %></div>
                             <div class="row rowOne-textTwo">Fundamental Analysis</div>
                         </div>
                         <div class="row-wrapper">
-                            <div class="checkmark checkmarkThree"><%- include('./subtemplates/checkmark') %></div>
+                            <div class="checkmark checkmarkThree"><%- include('./partials/checkmark') %></div>
                             <div class="row rowTwo-textOne">Powered by AI</div>
                         </div>
                         <div class="row-wrapper">
-                            <div class="checkmark checkmarkFour"><%- include('./subtemplates/checkmark') %></div>
+                            <div class="checkmark checkmarkFour"><%- include('./partials/checkmark') %></div>
                             <div class="row rowTwo-textTwo">Automated investing</div>
                         </div>
                         <div class="row-wrapper">
-                            <div class="checkmark checkmarkFive"><%- include('./subtemplates/checkmark') %></div>
+                            <div class="checkmark checkmarkFive"><%- include('./partials/checkmark') %></div>
                             <div class="row rowThree-textOne">Email/SMS alerting</div>
                         </div>
                         <div class="row-wrapper">
-                            <div class="checkmark checkmarkSix"><%- include('./subtemplates/checkmark') %></div>
+                            <div class="checkmark checkmarkSix"><%- include('./partials/checkmark') %></div>
                             <div class="row rowThree-textTwo">Risk-adjusted portfolio</div>
                         </div>
                         <div class="row-wrapper">
-                            <div class="checkmark checkmarkSeven"><%- include('./subtemplates/checkmark') %></div>
+                            <div class="checkmark checkmarkSeven"><%- include('./partials/checkmark') %></div>
                             <div class="row rowFour-textOne">Smart watchlists</div>
                         </div>
                         <div class="row-wrapper">
-                            <div class="checkmark checkmarkEight"><%- include('./subtemplates/checkmark') %></div>
+                            <div class="checkmark checkmarkEight"><%- include('./partials/checkmark') %></div>
                             <div class="row rowFour-textTwo">Automatic rebalancing</div>
                         </div>
                     </div>
@@ -195,7 +195,7 @@
                         <div class="q-answer">Our AI performs comprehensive fundamental analysis, including qualitative,
                             quantitative, market, and valuation analysis - from a vast array of data sources.</div>
                     </div>
-                    <span class="faq-arrow"><%- include('./subtemplates/arrow') %></span>
+                    <span class="faq-arrow"><%- include('./partials/arrow') %></span>
                 </div>
                 <div class="faq question-two">
                     <div class="q-wrapper">
@@ -206,7 +206,7 @@
                             note, however, that investing inherently carries some level of risk. Therefore, our AI's
                             recommendations should be utilized as part of a well-considered investment strategy.</div>
                     </div>
-                    <span class="faq-arrow"><%- include('./subtemplates/arrow') %></span>
+                    <span class="faq-arrow"><%- include('./partials/arrow') %></span>
                 </div>
                 <div class="faq question-three">
                     <div class="q-wrapper">
@@ -217,7 +217,7 @@
                             management and efficient decision-making.
                         </div>
                     </div>
-                    <span class="faq-arrow"><%- include('./subtemplates/arrow') %></span>
+                    <span class="faq-arrow"><%- include('./partials/arrow') %></span>
                 </div>
                 <div class="faq question-four">
                     <div class="q-wrapper">
@@ -229,7 +229,7 @@
                             their investment decisions.
                         </div>
                     </div>
-                    <span class="faq-arrow"><%- include('./subtemplates/arrow') %></span>
+                    <span class="faq-arrow"><%- include('./partials/arrow') %></span>
                 </div>
                 <div class="faq question-five">
                     <div class="q-wrapper">
@@ -240,7 +240,7 @@
                             advanced
                             analytics, saving considerable time while making informed investment decisions.</div>
                     </div>
-                    <span class="faq-arrow"><%- include('./subtemplates/arrow') %></span>
+                    <span class="faq-arrow"><%- include('./partials/arrow') %></span>
                 </div>
                 <div class="faq question-six">
                     <div class="q-wrapper">
@@ -252,7 +252,7 @@
                             marrying the best of AI-driven insights with human expertise for a more robust and balanced
                             investment strategy.</div>
                     </div>
-                    <span class="faq-arrow"><%- include('./subtemplates/arrow') %></span>
+                    <span class="faq-arrow"><%- include('./partials/arrow') %></span>
                 </div>
                 <div class="faq question-seven">
                     <div class="q-wrapper">
@@ -262,7 +262,7 @@
                             your
                             subscription to best fit your needs.</div>
                     </div>
-                    <span class="faq-arrow"><%- include('./subtemplates/arrow') %></span>
+                    <span class="faq-arrow"><%- include('./partials/arrow') %></span>
                 </div>
             </div>
         </div>

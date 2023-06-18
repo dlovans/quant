@@ -17,6 +17,22 @@ app.get('/', (req, res) => {
     res.render('landing')
 })
 
+app.get('/signin', (req, res) => {
+    res.render('signin')
+})
+
+app.get('/signup', (req, res) => {
+    res.render('signup')
+})
+
+app.get('/about', (req, res) => {
+    res.render('about')
+})
+
+app.get('/blog', (req, res) => {
+    res.render('blog')
+})
+
 
 app.listen(3000, () => {
     console.log('PORT 3000')
