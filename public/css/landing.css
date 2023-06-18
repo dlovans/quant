@@ -1188,6 +1188,7 @@
     .pricing-card {
         background-color: #04293a91;
         width: 90%;
+        max-width: 600px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1576,9 +1577,6 @@
         height: 60%;
     }
 
-    .pricing-card {
-        width: 430px;
-    }
 
     .row {
         font-size: 16px;
@@ -1783,9 +1781,7 @@
         height: 60%;
     }
 
-    .pricing-card {
-        width: 430px;
-    }
+
 
     .row {
         font-size: 16px;
@@ -1821,10 +1817,6 @@
 
     .pricing-table-mini {
         display: none;
-    }
-
-    .pricing-card {
-        width: 500px;
     }
 
     .billed-anually {
@@ -2364,7 +2356,8 @@
 
     .pricing-card {
         height: max-content;
-        width: 600px;
+        width: 50%;
+        max-width: 700px;
         background-color: #04293a91;
         border: none;
         z-index: 1102;
@@ -2611,8 +2604,9 @@
     }
 
     .q-question {
-        font-size: 18px;
+        font-size: 20px;
         outline: none;
+        height: 50px;
     }
 
 
@@ -2633,7 +2627,7 @@
     }
 
     .q-answer {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .q-answer-active {
@@ -2711,217 +2705,113 @@
         margin: 0;
     }
 
-
-
-    /* .brand-title2 {
-    background-color: transparent;
-    font-size: 24px;
-    color: #FFFFFF;
 }
 
-.brand-title2::after {
-    content: "Quant.";
-    color: #00b960;
-    font-size: 28px;
-    font-weight: 600;
-}
-
-.email {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: transparent;
-} */
-
-    /* .email::before {
-    content: "";
-    background: url('/img/email-svgrepo-com.png') no-repeat;
-    background-position: 5px;
-    background-size: 40px 40px;
-    position: relative;
-    top: 79px;
-    right: 195px;
-    height: 40px;
-    width: 40px;
-}
-
-.email label {
-    background-color: transparent;
-    font-size: 20px;
-    color: #FFFFFF;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.email input {
-    border-radius: 10px;
-    width: 100%;
-    border: none;
-    height: 50px;
-    color: #FFFFFF;
-    font-size: 20px;
-    padding: 0 10px 0 50px;
-    outline: none;
-    background-color: #171717;
-
-} */
-
-    /* .email input:-webkit-autofill,
-.email input:-webkit-autofill:hover,
-.email input:-webkit-autofill:focus,
-.email input:-webkit-autofill:active {
-    background: url('/img/email-svgrepo-com.png') no-repeat;
-    background-position: 5px;
-    background-size: 40px 40px;
-    background-color: #171717;
-    transition: all 5000s ease-in-out 0s;
-}
-
-
-
-.password {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: transparent;
-    margin-top: -20px;
-}
-
-.password::before {
-    content: "";
-    background: url('/img/password-svgrepo-com.png') no-repeat;
-    background-position: 5px;
-    background-size: 30px 30px;
-    position: relative;
-    height: 40px;
-    width: 40px;
-    top: 79px;
-    right: 190px;
-} */
-
-    /* .password label {
-    background-color: transparent;
-    font-size: 20px;
-    color: #FFFFFF;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.password input {
-    border-radius: 10px;
-    width: 100%;
-    border: none;
-    height: 50px;
-    color: #FFFFFF;
-    font-size: 20px;
-    padding: 0 10px 0 50px;
-    outline: none;
-    background-color: #171717;
-
-}
-
-.password input:-webkit-autofill,
-.password input:-webkit-autofill:hover,
-.password input:-webkit-autofill:focus,
-.password input:-webkit-autofill:active {
-    background: url('/img/password-svgrepo-com.png') no-repeat;
-    background-position: 5px;
-    background-size: 40px 40px;
-    background-color: #171717;
-    transition: all 5000s ease-in-out 0s;
-} */
-
+@media screen and (min-width: 2300px) {
+    .features-container {
+        margin-bottom: 500px;
+    }
 }
 
 @media screen and (min-width: 2561px) {
 
-    .svg {
-        z-index: 0;
+    nav {
+        margin-top: 100px;
+    }
+
+    .logo-container {
+        width: 150px;
+        height: 150px;
+    }
+
+    .logo {
+        width: 120px;
+        height: 120px;
     }
 
     .link {
-        font-size: 28px;
+        font-size: 40px;
     }
 
     .sign-in,
     .sign-up {
-        font-size: 28px;
+        font-size: 40px;
     }
 
     .sign-up {
-        width: 150px;
-        height: 60px;
+        width: 200px;
+        height: 80px;
+        margin-left: 20px;
     }
 
+
     .brand-wrapper {
-        width: 900px;
+        width: 1200px;
     }
 
     .brand-text {
-        font-size: 28px;
+        font-size: 40px;
     }
 
     .features-container {
-        margin-bottom: 400px;
+        margin-bottom: 1000px;
     }
 
     .ai-analysis,
     .efficiency,
     .automated-investing,
     .simplicity {
-        height: 330px;
-        width: 370px;
+        height: 500px;
+        width: 540px;
     }
 
     .ai-svg-wrapper,
     .efficiency-wrapper,
     .investing-wrapper,
     .simplicity-wrapper {
-        height: 100px;
-        width: 100px;
+        height: 150px;
+        width: 150px;
     }
 
     .ai-svg,
     .efficiency-svg,
     .investing-svg,
     .simplicity-svg {
-        height: 80px;
-        width: 80px;
+        height: 130px;
+        width: 130px;
     }
 
     .ai-text,
     .efficiency-text,
     .investing-text,
     .simplicity-text {
-        font-size: 26px;
-    }
-
-    .pricing-title {
-        font-size: 40px;
-    }
-
-    .pricing-text {
         font-size: 36px;
     }
 
+    .pricing-title {
+        font-size: 50px;
+    }
+
+    .pricing-text {
+        font-size: 44px;
+    }
+
     .billing-selector {
-        border-radius: 50px;
-        width: 400px;
-        height: 70px;
+        border-radius: 60px;
+        width: 600px;
+        height: 120px;
         margin-bottom: 50px;
     }
 
     .billing-text {
-        font-size: 18px;
         height: 100%;
     }
 
     .monthly {
-        width: 175px;
-        font-size: 24px;
-        margin-left: 10px;
+        width: 250px;
+        font-size: 44px;
+        margin-left: 0;
+        padding-left: 20px;
     }
 
     .monthly-inactive {
@@ -2929,13 +2819,14 @@
     }
 
     .yearly {
-        font-size: 24px;
-        width: 225px;
-        margin-right: 10px;
+        font-size: 44px;
+        width: 350px;
+        margin-right: 0;
+        padding-right: 20px;
     }
 
     .yearly-text {
-        width: 90px;
+        width: auto;
     }
 
     .yearly-active {
@@ -2943,33 +2834,46 @@
     }
 
     .save-twenty-wrapper {
-        height: 40px;
-        width: 100px;
-        border-radius: 30px;
-        margin-left: 5px;
-    }
-
-    .save-twenty {
-        font-size: 16px;
-        height: 20px;
-        border-radius: 30px;
-        width: 80px;
-    }
-
-    .highlighter {
         height: 50px;
-        width: 165px;
-        z-index: 0;
+        width: 160px;
+        border-radius: 30px;
         margin-left: 10px;
     }
 
+    .save-twenty {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        height: 30px;
+        border-radius: 30px;
+        width: 130px;
+    }
+
+    .highlighter {
+        border-radius: 40px;
+        height: 80px;
+        width: 230px;
+        z-index: 0;
+        margin-left: 20px;
+    }
+
     .highlighter-active-ml {
-        margin-left: 177px;
-        margin-right: 10px;
+        margin-left: 250px;
+        margin-right: 20px;
     }
 
     .highlighter-active-wh {
-        width: 213px;
+        width: 330px;
+    }
+
+    .pricing-card {
+        width: 50%;
+        height: 1500px;
+        max-width: 1400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .pricing-table-wrapper {
@@ -2980,33 +2884,31 @@
         justify-content: center;
     }
 
-    .pricing-card {
-        width: 600px;
-        display: flex;
-    }
-
     .price-integer {
-        height: 25%;
+        height: max-content;
         width: 100%;
-        font-size: 30px;
+        font-size: 44px;
         margin: 50px 0;
     }
 
     .price-integer::after {
-        top: 75px;
+        top: 175px;
         bottom: 0;
         height: 2px;
     }
 
     .billed-anually {
         left: 50%;
-        top: 80px;
-        margin-top: 5px;
+        top: 100px;
+        margin-top: 20px;
+        font-size: 30px;
     }
 
-
     .pricing-table {
-        width: 600px;
+        width: 100%;
+        height: max-content;
+        grid-template-columns: 0.2fr 0.25fr 1.2fr 0.25fr 1.2fr 0.2fr;
+        grid-template-rows: repeat(4, 1fr);
     }
 
 
@@ -3015,13 +2917,23 @@
     }
 
     .checkmark-svg {
-        width: 30px;
-        height: 30px;
+        width: 60px;
+        height: 60px;
     }
 
     .row {
-        font-size: 1rem;
+        height: 200px;
+        font-size: 26px;
         padding-left: 10px;
         height: 60px;
+    }
+
+    .pricing-cta-wrapper {
+        height: max-content;
+    }
+
+    .faq-wrapper {
+        width: 50%;
+        max-width: 2000px;
     }
 }
