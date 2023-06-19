@@ -71,7 +71,6 @@
         z-index: 4;
         transition: all 500ms;
         justify-content: flex-start;
-        background-color: #2C3E50;
     }
 
     .menu-container-active {
@@ -245,7 +244,7 @@
         align-items: center;
         width: 90%;
         height: 175px;
-        background-color: #04293a91;
+        background-color: var(--tertiary-color);
         border-radius: 10px;
     }
 
