@@ -3,11 +3,12 @@ const app = express()
 const router = express.Router()
 const path = require('path')
 const mongoose = require('mongoose')
-const { timeStamp } = require('console')
 
 if (process.env.NODE_ENV === "development") {
-    require(dotenv).config()
+    require('dotenv').config()
 }
+
+mongoose.connect(process.env.DB_URI || 'mongodb://127.0.0.1:27017/aquity');
 
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(express.urlencoded({ extended: true }))
