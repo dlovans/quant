@@ -1,10 +1,9 @@
 const express = require('express')
 const app = express()
-const router = express.Router()
 const path = require('path')
 const mongoose = require('mongoose')
 
-const publicRoutes = require('./routes/publicRoutes.js')
+const generalRoutes = require('./routes/generalRoutes.js')
 const userRoutes = require('./routes/userRoutes.js')
 
 if (process.env.NODE_ENV === "development") {
@@ -19,7 +18,7 @@ app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'));
 
 
-app.use('/', publicRoutes)
+app.use('/', generalRoutes)
 app.use('/', userRoutes)
 
 

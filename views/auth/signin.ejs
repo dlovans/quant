@@ -6,24 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acquity Sign-in</title>
+    <%- include('../partials/font') %>
     <link rel="stylesheet" href="/css/signin.css">
 </head>
 
 <body>
-    <main>
+    <main class="form-container">
         <form action="/signin" id="signin" method="POST">
-            <div class="brand-name">Aquity.</div>
-
+            <div class="brand-name">Sign in to </div>
             <div class="email-container">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" placeholder="Email">
             </div>
             <div class="password-container">
-                <label for="password" class="password">Password</label>
-                <input type="password" name="password" id="password">
+                <input type="password" name="password" id="password" placeholder="Password">
             </div>
+            <a href="/recovery" class="forgot-password">Forgot password? </a>
+            <button class="confirm-signin">Sign in</button>
         </form>
+        <div class="external-oauth-container">
+            <div class="oauth-line">or continue with</div>
+            <div class="external-oauth-wrapper">
+                <div class="google"></div>
+                <div class="apple"></div>
+                <div class="linkedin"></div>
+            </div>
+            <div class="signup-container">Not a member yet? <a href="/signup">Join</a></div>
+        </div>
     </main>
+
+    <script src="/js/signin.js"></script>
 </body>
 
 </html>

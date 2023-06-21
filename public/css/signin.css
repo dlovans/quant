@@ -2,8 +2,176 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    background-color: #000f1d;
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
     color: #FFFFFF;
 }
 
-@media screen and (max-width: 280px) {}
+@media screen and (max-width: 280px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .form-container {
+        height: 100svh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #signin {
+        height: max-content;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: transparent;
+        border-radius: 10px;
+        margin-top: 50px;
+    }
+
+    .brand-name {
+        font-size: 20px;
+        margin: 20px 0;
+        background-color: transparent;
+    }
+
+    .brand-name::after {
+        content: "Aquity.";
+        position: relative;
+        font-weight: 600;
+        color: var(--primary-color);
+    }
+
+    .email-container,
+    .password-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        width: 100%;
+    }
+
+    .email-container {
+        margin-top: 20px;
+    }
+
+    .password-container {
+        margin-top: 20px;
+    }
+
+    .email-container::before {
+        content: "";
+        position: absolute;
+        background: url('/img/email.svg');
+        background-size: 25px;
+        height: 25px;
+        width: 25px;
+        z-index: 10;
+        top: 7px;
+        left: 5px;
+    }
+
+    .password-container::before {
+        content: "";
+        position: absolute;
+        background: url('/img/password.svg');
+        background-size: 25px;
+        height: 25px;
+        width: 25px;
+        z-index: 10;
+        top: 7px;
+        left: 5px;
+    }
+
+    .password-container::after {
+        content: "";
+        position: absolute;
+        background: url('/img/the-eye.svg') no-repeat;
+        background-size: contain;
+        height: 30px;
+        width: 30px;
+        right: 5px;
+        top: 6px;
+
+    }
+
+
+    #email,
+    #password {
+        position: relative;
+        background-color: var(--tertiary-color);
+        height: 40px;
+        border-radius: 8px;
+        color: #FFFFFF;
+        border: none;
+        outline: none;
+        padding: 0 10px 0 35px;
+        font-size: 14px;
+    }
+
+    #password {
+        padding: 0 40px 0 35px;
+    }
+
+    input:autofill,
+    input:autofill:hover,
+    input:autofill:focus,
+    input:autofill:active {
+        background-clip: text;
+        color: #FFFFFF;
+        transition: background-color 5000s ease-in-out 0s;
+        box-shadow: inset 0 0 20px 20px var(--teriary-color);
+    }
+
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: #FFFFFF;
+        transition: background-color 5000s ease-in-out 0s;
+        box-shadow: inset 0 0 20px 20px var(--tertiary-color);
+    }
+
+    #email::placeholder,
+    #password::placeholder {
+        font-size: 18px;
+    }
+
+    .forgot-password {
+        align-self: flex-end;
+        margin-top: 10px;
+        text-decoration: none;
+        color: var(--accent-color);
+        font-size: 12px;
+    }
+
+    .confirm-signin {
+        width: 100%;
+        border: none;
+        height: 40px;
+        color: #FFFFFF;
+        background-color: var(--primary-color);
+        margin-top: 20px;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+
+    .external-oauth-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .oauth-line {
+        color: var(--accent-color);
+        font-size: 12px;
+        margin-top: 20px;
+        position: relative;
+    }
+}
