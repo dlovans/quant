@@ -5,9 +5,9 @@
     --bg-color: #000f1d;
     --accent-color: #a9a8a8;
     --hover-color: #3cffa1;
-    /* --error-color: ; */
-    /* --sucess-color:; */
-    /* --warning-color:; */
+    --error-color: #E53935;
+    --success-color: #00ff0d;
+    --warning-color: #FFEB3B;
 
     --font-family: 'Montserrat', sans-serif;
 }

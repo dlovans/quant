@@ -15,22 +15,23 @@
         <form action="/signin" id="signin" method="POST">
             <div class="brand-name">Sign in to </div>
             <div class="email-container">
-                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="email" name="email" class="email" placeholder="Email">
             </div>
             <div class="password-container">
-                <input type="password" name="password" id="password" placeholder="Password">
+                <%- include('../partials/eye-password') %>
+                <input type="password" name="password" class="password" placeholder="Password">
             </div>
             <a href="/recovery" class="forgot-password">Forgot password? </a>
             <button class="confirm-signin">Sign in</button>
         </form>
         <div class="external-oauth-container">
-            <div class="oauth-line">or continue with</div>
+            <div class="oauth-line-decor">or continue with</div>
             <div class="external-oauth-wrapper">
-                <div class="google"></div>
-                <div class="apple"></div>
-                <div class="linkedin"></div>
+                <div class="google"><%- include('../partials/google-logo') %></div>
+                <div class="apple"><%- include('../partials/apple-logo') %></div>
+                <div class="linkedin"><%- include('../partials/linkedin-logo') %></div>
             </div>
-            <div class="signup-container">Not a member yet? <a href="/signup">Join</a></div>
+            <div class="signup-container">Not a member yet? <a class="redirect-signup" href="/signup">Join</a></div>
         </div>
     </main>
 
