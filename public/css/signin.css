@@ -194,13 +194,53 @@
         font-size: 12px;
         margin-top: 20px;
         position: relative;
+        width: 100%;
+        text-align: center;
+    }
+
+    .oauth-line-decor::before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 29%;
+        z-index: 10;
+        left: 0;
+        top: 50%;
+        border-radius: 10px;
+        transform: translateY(-50%);
+        background: -moz-linear-gradient(left, #00000000 0%, #00b96020 25%, #00b96081 75%, #00b960 100%);
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%, #00000000), color-stop(25%, #00b96020), color-stop(75%, #00b96081), color-stop(100%, #00b960));
+        background: -webkit-linear-gradient(left, #00000000 0%, #00b96020 25%, #00b96081 75%, #00b960 100%);
+        background: -o-linear-gradient(left, #00000000 0%, #00b96020 25%, #00b96081 75%, #00b960 100%);
+        background: -ms-linear-gradient(left, #00000000 0%, #00b96020 25%, #00b96081 75%, #00b960 100%);
+        background: linear-gradient(to right, #00000000 0%, #00b96020 25%, #00b96081 75%, #00b960 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#00000000', GradientType=1);
+    }
+
+    .oauth-line-decor::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 29%;
+        z-index: 10;
+        right: 0;
+        top: 50%;
+        border-radius: 10px;
+        transform: translateY(-50%);
+        background: -moz-linear-gradient(left, #00000000 0%, #00b96020 25%, #00b96081 75%, #00b960 100%);
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%, #00000000), color-stop(25%, #00b96020), color-stop(75%, #00b96081), color-stop(100%, #00b960));
+        background: -webkit-linear-gradient(left, #00000000 0%, #00b96020 25%, #00b96081 75%, #00b960 100%);
+        background: -o-linear-gradient(left, #00000000 0%, #00b96020 25%, #00b96081 75%, #00b960 100%);
+        background: -ms-linear-gradient(left, #00000000 0%, #00b96020 25%, #00b96081 75%, #00b960 100%);
+        background: linear-gradient(to left, #00000000 0%, #00b96020 25%, #00b96081 75%, #00b960 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#00000000', GradientType=1);
     }
 
     .external-oauth-wrapper {
         width: 100%;
         display: flex;
         justify-content: space-between;
-        margin-top: 20px;
+        margin-top: 40px;
     }
 
     .google,
@@ -214,6 +254,15 @@
         justify-content: center;
         align-items: center;
         border-radius: 10px;
+        cursor: pointer;
+        transform: scale(1);
+        transition: transform 300ms ease-in-out;
+    }
+
+    .google:hover,
+    .apple:hover,
+    .linkedin:hover {
+        transform: scale(1.1);
     }
 
     .google-logo {
