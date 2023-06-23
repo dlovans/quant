@@ -11,27 +11,34 @@
 </head>
 
 <body>
-    <main class="form-container">
-        <form action="/signin" id="signin" method="POST">
-            <div class="brand-name">Sign in to </div>
-            <div class="email-container">
-                <input type="email" name="email" class="email" placeholder="Email">
+    <main class="main-content">
+        <div class="form-container">
+            <form action="/signin" id="signin" method="POST">
+                <div class="brand-name">Sign in to </div>
+                <div class="email-container">
+                    <input type="email" name="email" class="email" placeholder="Email">
+                </div>
+                <div class="password-container">
+                    <%- include('../partials/eye-password') %>
+                    <input type="password" name="password" class="password" placeholder="Password">
+                </div>
+                <a href="/recovery" class="forgot-password">Forgot password? </a>
+                <button class="confirm-signin">Sign in</button>
+            </form>
+            <div class="external-oauth-container">
+                <div class="oauth-alternative">
+                    <div class="oauth-line-decor">
+                        <div class="correct-color-overlay">or continue with</div>
+                    </div>
+                    <div class="underlay"></div>
+                </div>
+                <div class="external-oauth-wrapper">
+                    <div class="google"><%- include('../partials/google-logo') %></div>
+                    <div class="apple"><%- include('../partials/apple-logo') %></div>
+                    <div class="linkedin"><%- include('../partials/linkedin-logo') %></div>
+                </div>
+                <div class="signup-container">Not a member yet? <a class="redirect-signup" href="/signup">Join</a></div>
             </div>
-            <div class="password-container">
-                <%- include('../partials/eye-password') %>
-                <input type="password" name="password" class="password" placeholder="Password">
-            </div>
-            <a href="/recovery" class="forgot-password">Forgot password? </a>
-            <button class="confirm-signin">Sign in</button>
-        </form>
-        <div class="external-oauth-container">
-            <div class="oauth-line-decor">or continue with</div>
-            <div class="external-oauth-wrapper">
-                <div class="google"><%- include('../partials/google-logo') %></div>
-                <div class="apple"><%- include('../partials/apple-logo') %></div>
-                <div class="linkedin"><%- include('../partials/linkedin-logo') %></div>
-            </div>
-            <div class="signup-container">Not a member yet? <a class="redirect-signup" href="/signup">Join</a></div>
         </div>
     </main>
 
