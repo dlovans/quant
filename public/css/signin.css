@@ -8,9 +8,25 @@
 }
 
 @media screen and (max-width: 280px) {
-
     body {
-        overflow-x: hidden;
+        overflow: hidden;
+    }
+
+    header {
+        width: 100%;
+        position: relative;
+    }
+
+    .logo {
+        position: absolute;
+        margin: 20px 0 0 20px;
+        font-weight: 600;
+        text-decoration: none;
+        color: var(--primary-color);
+    }
+
+    .main-content {
+        width: 100%;
     }
 
     .form-container {
@@ -33,7 +49,7 @@
 
     .brand-name {
         font-size: 20px;
-        margin: 40px 0;
+        margin: 60px 0 20px 0;
         background-color: transparent;
     }
 
@@ -252,7 +268,7 @@
     .google:hover,
     .apple:hover,
     .linkedin:hover {
-        transform: scale(1.1);
+        transform: scale(0.9);
     }
 
     .google-logo {
@@ -287,16 +303,30 @@
 
 @media screen and (min-width:281px) {
     body {
-        overflow-x: hidden;
-        display: flex;
-        justify-content: center;
+        overflow: hidden;
     }
+
+    header {
+        width: 100%;
+        position: relative;
+    }
+
+    .logo {
+        position: absolute;
+        margin: 20px 0 0 20px;
+        font-weight: 600;
+        text-decoration: none;
+        top: 0;
+        left: 0;
+        color: var(--primary-color);
+    }
+
 
     .main-content {
         height: 100svh;
         width: 100%;
-        max-width: 360px;
         display: flex;
+        justify-content: center;
     }
 
     .form-container {
@@ -304,6 +334,8 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
+        max-width: 360px;
+        margin-top: 40px;
     }
 
     #signin {
@@ -318,7 +350,7 @@
 
     .brand-name {
         font-size: 20px;
-        margin: 40px 0;
+        margin: 60px 0 20px 0;
         background-color: transparent;
     }
 
@@ -355,6 +387,7 @@
         right: 0;
         top: 10px;
         fill: var(--primary-color);
+        cursor: pointer;
     }
 
     .eye-line {
@@ -463,6 +496,14 @@
         margin-top: 20px;
         border-radius: 10px;
         font-size: 16px;
+        cursor: pointer;
+        transform: scale(1);
+        transition: all .3s;
+    }
+
+    .confirm-signin:hover {
+        background-color: var(--hover-color);
+        transform: scale(0.96);
     }
 
     .external-oauth-container {
@@ -543,7 +584,7 @@
     .google:hover,
     .apple:hover,
     .linkedin:hover {
-        transform: scale(1.1);
+        transform: scale(0.9);
     }
 
     .google-logo {
@@ -584,7 +625,7 @@
         height: max-content;
         background-color: var(--tertiary-color);
         border-radius: 10px;
-        margin-top: 50px;
+        margin-top: 70px;
     }
 
     .brand-name {
@@ -610,9 +651,23 @@
 
 }
 
-@media screen and (min-width: 768px) {}
 
-@media screen and (min-width: 992px) {}
+
+@media screen and (min-width: 992px) {
+
+    .logo {
+        font-size: 20px;
+    }
+
+
+    .main-content {
+        align-items: center;
+    }
+
+    .form-container {
+        margin: 0;
+    }
+}
 
 @media screen and (min-width: 1200px) {}
 
