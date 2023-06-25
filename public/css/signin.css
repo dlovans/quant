@@ -8,6 +8,7 @@
 }
 
 @media screen and (max-width: 280px) {
+
     body {
         overflow: hidden;
     }
@@ -298,6 +299,16 @@
         color: var(--primary-color);
         font-weight: 600;
         text-decoration: none;
+    }
+
+    .copyright {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+        color: var(--accent-color);
+        font-size: 12px;
     }
 }
 
@@ -673,4 +684,120 @@
 
 @media screen and (min-width: 1920px) {}
 
-@media screen and (min-width: 2561px) {}
+@media screen and (min-width: 2561px) {
+    .logo {
+        margin: 40px 0 0 40px;
+        font-size: 50px;
+    }
+
+    .form-container {
+        max-width: 720px;
+    }
+
+    #signin {
+        border-radius: 20px;
+    }
+
+    .brand-name {
+        font-size: 40px;
+        margin: 60px 0 40px 0;
+    }
+
+    .email-container,
+    .password-container {
+        margin-top: 40px;
+    }
+
+    .eye {
+        height: 60px;
+        width: 40px;
+        right: 10px;
+    }
+
+    .email,
+    .password {
+        height: 80px;
+        font-size: 30px;
+    }
+
+    .email {
+        padding: 0 10px 0 60px;
+    }
+
+    .password {
+        padding: 0 60px 0 60px;
+    }
+
+    .email-container::before,
+    .password-container::before {
+        height: 50px;
+        width: 50px;
+        background-size: 50px;
+        background-repeat: no-repeat;
+        top: 15px;
+    }
+
+    .email::placeholder,
+    .password::placeholder {
+        font-size: 30px;
+    }
+
+    .forgot-password {
+        font-size: 24px;
+        margin: 20px 0 40px;
+    }
+
+    .confirm-signin {
+        height: 70px;
+        font-size: 30px;
+    }
+
+    .external-oauth-container {
+        margin-top: 60px;
+    }
+
+    .oauth-line-decor {
+        width: 220px;
+    }
+
+    .correct-color-overlay {
+        font-size: 24px;
+    }
+
+    .underlay {
+        height: 4px;
+    }
+
+    .external-oauth-wrapper {
+        justify-content: center;
+        margin-top: 80px;
+    }
+
+    .google,
+    .apple,
+    .linkedin {
+        height: 100px;
+        width: 25%;
+        border-radius: 20px;
+    }
+
+    .apple {
+        margin: 0 30px;
+    }
+
+    .google-logo,
+    .linkedin-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .apple-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .signup-container {
+        font-size: 40px;
+        margin: 80px 0;
+    }
+}
