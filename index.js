@@ -4,7 +4,9 @@ const path = require('path')
 const mongoose = require('mongoose')
 
 const generalRoutes = require('./routes/generalRoutes.js')
-const userRoutes = require('./routes/userRoutes.js')
+const signinRoutes = require('./routes/signinRoutes.js')
+const signupRoutes = require('./routes/signupRoutes.js')
+const dashboardRoutes = require('./routes/dashboardRoutes.js')
 
 if (process.env.NODE_ENV === "development") {
     require('dotenv').config()
@@ -19,7 +21,9 @@ app.set('views', path.join(__dirname, 'views'));
 
 
 app.use('/', generalRoutes)
-app.use('/', userRoutes)
+app.use('/signin', signinRoutes)
+app.use('/signup', signupRoutes)
+app.use('/dashboard', dashboardRoutes)
 
 
 

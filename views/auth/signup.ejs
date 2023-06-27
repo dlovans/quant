@@ -5,11 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aquity Sign-up</title>
+    <title>Acquity Sign-up</title>
+    <%- include('../partials/font') %>
+    <link rel="stylesheet" href="/css/signup.css">
 </head>
 
 <body>
-
+    <header>
+        <a class="logo" href="/">Aquity.</a>
+    </header>
+    <main class="main-content">
+        <div class="form-container">
+            <form action="/signup" id="signin" method="POST">
+                <div class="brand-name">Sign up to </div>
+                <div class="email-container">
+                    <input type="email" name="email" class="email" placeholder="Email">
+                </div>
+                <div class="password-container">
+                    <%- include('../partials/eye-password') %>
+                    <input type="password" name="password" class="password" placeholder="Password">
+                </div>
+                <button class="confirm-signin">Sign in</button>
+            </form>
+            <div class="external-oauth-container">
+                <div class="oauth-alternative">
+                    <div class="oauth-line-decor">
+                        <div class="correct-color-overlay">or continue with</div>
+                    </div>
+                    <div class="underlay"></div>
+                </div>
+                <div class="external-oauth-wrapper">
+                    <div class="google"><%- include('../partials/google-logo') %></div>
+                    <div class="apple"><%- include('../partials/apple-logo') %></div>
+                    <div class="linkedin"><%- include('../partials/linkedin-logo') %></div>
+                </div>
+                <div class="signup-container">Already a member? <a class="redirect-signup" href="/signin">Sign In</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="copyright">&#169; 2023 Aquity AB</div>
+    </footer>
+    <script src="/js/signin.js"></script>
 </body>
 
 </html>
