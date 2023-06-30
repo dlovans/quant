@@ -10,7 +10,7 @@
 @media screen and (max-width: 280px) {
 
     body {
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     header {
@@ -38,7 +38,7 @@
         align-items: center;
     }
 
-    #signin {
+    #signup {
         height: max-content;
         width: 90%;
         display: flex;
@@ -185,7 +185,52 @@
         font-size: 12px;
     }
 
-    .confirm-signin {
+    .password-guideline {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .pwg-list {
+        max-height: 0;
+        opacity: 0;
+        background-color: transparent;
+        font-size: 12px;
+        transition: all 300ms;
+        margin: 10px 0 0 5px
+    }
+
+    .pwg-list-active {
+        max-height: 200px;
+        opacity: 1;
+    }
+
+    .listItem {
+        color: #FFFFFF;
+        transition: color 300ms;
+        list-style: none;
+    }
+
+    .listItem::before {
+        content: "\2713";
+        margin-right: 5px;
+    }
+
+    .listItem-fail {
+        color: var(--error-color);
+    }
+
+    .listItem-pass {
+        color: var(--success-color);
+    }
+
+    .listItem-two,
+    .listItem-three {
+        margin: 5px 0;
+    }
+
+
+
+    .confirm-signup {
         width: 100%;
         border: none;
         height: 40px;
@@ -314,7 +359,7 @@
 
 @media screen and (min-width:281px) {
     body {
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     header {
@@ -349,7 +394,7 @@
         margin-top: 40px;
     }
 
-    #signin {
+    #signup {
         height: max-content;
         width: 90%;
         display: flex;
@@ -498,7 +543,7 @@
         background-color: transparent;
     }
 
-    .confirm-signin {
+    .confirm-signup {
         width: 100%;
         border: none;
         height: 40px;
@@ -512,7 +557,7 @@
         transition: all .3s;
     }
 
-    .confirm-signin:hover {
+    .confirm-signup:hover {
         background-color: var(--hover-color);
         transform: scale(0.96);
     }
@@ -694,7 +739,7 @@
         max-width: 720px;
     }
 
-    #signin {
+    #signup {
         border-radius: 20px;
     }
 
@@ -747,7 +792,7 @@
         margin: 20px 0 40px;
     }
 
-    .confirm-signin {
+    .confirm-signup {
         height: 70px;
         font-size: 30px;
     }

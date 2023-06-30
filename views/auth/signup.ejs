@@ -16,7 +16,7 @@
     </header>
     <main class="main-content">
         <div class="form-container">
-            <form action="/signup" id="signin" method="POST">
+            <form action="/signup" id="signup" method="POST">
                 <div class="brand-name">Sign up to </div>
                 <div class="email-container">
                     <input type="email" name="email" class="email" placeholder="Email">
@@ -25,7 +25,15 @@
                     <%- include('../partials/eye-password') %>
                     <input type="password" name="password" class="password" placeholder="Password">
                 </div>
-                <button class="confirm-signin">Sign in</button>
+                <div class="password-guideline">
+                    <ul class="pwg-list">
+                        <li class="listItem listItem-one">Minimum 1 capital letter</li>
+                        <li class="listItem listItem-two">Minimum 8 characters</li>
+                        <li class="listItem listItem-three">Minimum 1 number</li>
+                        <li class="listItem listItem-four">No spaces</li>
+                    </ul>
+                </div>
+                <button class="confirm-signup">Join</button>
             </form>
             <div class="external-oauth-container">
                 <div class="oauth-alternative">
@@ -47,7 +55,7 @@
     <footer>
         <div class="copyright">&#169; 2023 Aquity AB</div>
     </footer>
-    <script src="/js/signin.js"></script>
+    <script src="/js/signup.js"></script>
 </body>
 
 </html>
