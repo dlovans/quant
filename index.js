@@ -12,7 +12,7 @@ if (process.env.NODE_ENV === "development") {
     require('dotenv').config()
 }
 
-mongoose.connect(process.env.DB_URI || 'mongodb://127.0.0.1:27017/aquity');
+// mongoose.connect(process.env.DB_URI || 'mongodb://127.0.0.1:27017/aquity');
 
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(express.urlencoded({ extended: true }))
