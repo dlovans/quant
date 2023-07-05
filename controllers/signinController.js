@@ -7,12 +7,14 @@ exports.renderSignin = (req, res) => {
 }
 
 // Sign in user
-exports.signIn = (req, res) => {
+exports.signIn = async (req, res) => {
+    // If client skipped client-side validation, do this
     if (!req.body.email) {
         res.status(400).json({ success: false, missingFields: true, message: "Fields are null" })
     } else {
-        User.findOne({ email: req.body.email })
+        await User.findOne({ email: req.body.email })
             .then(user => {
+                // If no match for email in db, display incorrect data msg (on second try, prompt user so sign up)
                 if (!user) {
                     res.status(400).json({ success: false, message: "Incorrect email or password" })
                 } else {
@@ -41,7 +43,9 @@ exports.signIn = (req, res) => {
                                 res.status(500).send(err)
                             })
                     } else {
-                        // otherwise, check with which external oauth user has signed in with, and provide variable for axios and client side implementation
+                        // otherwise, check with which external oauth user has signed in with if no password is associated with user,
+                        //  and prompt user to use oauth to sign in
+                        // 
                         if (user.google) {
                             res.status(200).json({ google: true })
                         } else if (user.apple) {

@@ -10,7 +10,7 @@
 @media screen and (max-width: 280px) {
 
     body {
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     header {
@@ -144,6 +144,10 @@
 
     .input-success {
         border: 1px solid var(--success-color);
+    }
+
+    .input-warning {
+        border: 1px solid var(--warning-color);
     }
 
     .password {
@@ -314,7 +318,7 @@
 
 @media screen and (min-width:281px) {
     body {
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     header {
@@ -456,6 +460,10 @@
 
     .input-success {
         border: 1px solid var(--success-color);
+    }
+
+    .input-warning {
+        border: 1px solid var(--warning-color);
     }
 
     .password {
@@ -627,6 +635,16 @@
         font-weight: 600;
         text-decoration: none;
         background-color: transparent;
+    }
+
+    .copyright {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 25px;
+        width: 100%;
+        text-align: center;
+        color: var(--accent-color);
+        font-size: 12px;
     }
 
 }

@@ -3,19 +3,20 @@ const app = express()
 const path = require('path')
 const mongoose = require('mongoose')
 
+if (process.env.NODE_ENV === "development") {
+    require('dotenv').config()
+}
+
 const generalRoutes = require('./routes/generalRoutes.js')
 const signinRoutes = require('./routes/signinRoutes.js')
 const signupRoutes = require('./routes/signupRoutes.js')
 const dashboardRoutes = require('./routes/dashboardRoutes.js')
 
-if (process.env.NODE_ENV === "development") {
-    require('dotenv').config()
-}
-
-// mongoose.connect(process.env.DB_URI || 'mongodb://127.0.0.1:27017/aquity');
+mongoose.connect(process.env.DB_URI || 'mongodb://127.0.0.1:27017/aquity');
 
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(express.urlencoded({ extended: true }))
+app.use(express.json())
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'));
 
