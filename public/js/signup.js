@@ -69,6 +69,19 @@ pwInputField.addEventListener('click', function () {
     pwgList.classList.add('pwg-list-active');
 })
 
+// If user switches to password field with tab key, display password requirements
+eInputField.addEventListener('keydown', function (e) {
+    if (e.keyCode === 9) {
+        pwInputField.addEventListener('keyup', function (e) {
+            if (e.keyCode === 9) {
+                pwgList.classList.add('pwg-list-active')
+            }
+        })
+    }
+
+
+})
+
 // Function to test password data against requirements
 function updateListItem(listItem, test) {
     if (test) {
@@ -124,7 +137,19 @@ pwInputField.addEventListener('input', function () {
 confirmBtn.addEventListener('click', function (e) {
     e.preventDefault()
     if (eStatus && pwStatus) {
-        signupForm.submit()
+        const data = {
+            email: eInputField.value,
+            password: pwInputField.value
+        }
+        axios.post('/signup', data)
+            .then(response => {
+                if (response.data.redirectURL) {
+                    window.location.href = response.data.redirectURL;
+                }
+            })
+            .catch((err) => {
+                console.log(err)
+            })
     } else {
         if (!eStatus) {
             if (eInputField.value === "") {

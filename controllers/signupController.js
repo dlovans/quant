@@ -1,5 +1,6 @@
 const User = require('../models/user')
 const bcrypt = require('bcrypt')
+const saltRounds = 10
 
 
 // Render sign up page
@@ -19,11 +20,14 @@ exports.signupUser = async (req, res) => {
             // Check if email exists in database
             await User.findOne({ email: req.body.email })
                 .then(async email => {
-                    // If email doesnt exist, create new user and has with bcrypt
+                    // If email doesnt exist, create new user and hash with bcrypt
                     if (!email) {
-                        const createUser = new User({ email: req.body.email, password: req.body.password })
-                        await createUser.save()
-                        res.redirect('/')
+                        bcrypt.hash(req.body.password, saltRounds, async function (err, hash) {
+                            const createUser = new User({ email: req.body.email, password: hash })
+                            await createUser.save()
+                            res.json({ redirectURL: '/dashboard' })
+                        });
+
                     } else {
                         // Otherwise, send  msg about user already existing and prompt client to sign in instead
                         res.json({ message: "Email already exists. Sign in!" })
