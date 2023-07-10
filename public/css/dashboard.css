@@ -1,0 +1,124 @@
+* {
+    font-family: var(--font-family);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #FFFFFF;
+}
+
+body {
+    background-color: var(--bg-color);
+    overflow-x: hidden;
+    position: relative;
+}
+
+@media screen and (max-width: 280px) {
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50px;
+        margin-left: 10px;
+    }
+
+    .menu-button {
+        position: fixed;
+        margin: 10px 0 0 0;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 11;
+    }
+
+    .menu-wrapper {
+        transition: all 200ms;
+    }
+
+    .line {
+        width: 30px;
+        height: 2px;
+        background-color: var(--primary-color);
+        border-radius: 10px;
+        transition: all 500ms;
+    }
+
+    .line2 {
+        margin: 5px 0;
+    }
+
+    .line2-active-collapse {
+        margin: 0;
+        transition-duration: 200ms;
+    }
+
+    .menu-wrapper-active-rotate {
+        transition-delay: 250ms;
+        transform: rotate(90deg);
+    }
+
+
+    .line2-active-expand {
+        margin: 5px 0;
+    }
+
+    .side-navbar {
+        position: fixed;
+        width: 50px;
+        height: 100svh;
+        display: flex;
+        align-items: center;
+        z-index: 10;
+        transform: translateX(-150%);
+        transition: transform 500ms;
+    }
+
+    .side-navbar-active {
+        transform: translateX(0);
+    }
+
+    .sidemenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--tertiary-color);
+        height: 80%;
+        width: 100%;
+        border-radius: 10px;
+        position: relative;
+
+    }
+
+    .home,
+    .settings,
+    .signout {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .home {
+        margin-top: 10px;
+    }
+
+    .signout {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 10px;
+    }
+
+    .side-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .home-btn,
+    .settings-btn,
+    .signout-btn {
+        width: 30px;
+        height: 30px;
+    }
+}

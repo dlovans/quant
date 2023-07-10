@@ -14,7 +14,7 @@ exports.signIn = async (req, res) => {
     } else {
         await User.findOne({ email: req.body.email })
             .then(user => {
-                // If no match for email in db, display incorrect data msg (on second try, prompt user so sign up)
+                // If no match for email in db, display incorrect data msg (on second try, prompt user to sign up)
                 if (!user) {
                     res.status(400).json({ success: false, message: "Incorrect email or password" })
                 } else {

@@ -4,11 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard</title>
+    <%- include('../partials/font') %>
+    <link rel="stylesheet" href="/css/dashboard.css">
 </head>
 
 <body>
+    <header class="navigation">
+        <!-- Sidemenu -->
+        <div class="menu-button">
+            <div class="menu-wrapper">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
+        </div>
+        <nav class="side-navbar">
+            <%- include('../partials/dash-sidemenu') %>
+        </nav>
+    </header>
+    <main>
 
+    </main>
+
+    <script src="/js/dashboard.js"></script>
 </body>
 
 </html>
