@@ -2,7 +2,12 @@ const menuBtn = document.querySelector('.menu-button')
 const menuWrapper = document.querySelector('.menu-wrapper')
 const lineTwo = document.querySelector('.line2')
 const sideNavbar = document.querySelector('.side-navbar')
+const sideMenu = document.querySelector('.sidemenu')
+const sideMenuBtns = document.querySelectorAll('.sideMenu-button')
+const sideMenuOverlay = document.querySelector('.overlay')
 
+// This variable's related to the sidemenu item button click, not hamburger menu
+let sideMenuItemClick;
 
 // Eventhandler for menu button. first, second and third variables used to clear timeouts if user rapidly clicks menu
 let menuOpen = false
@@ -11,6 +16,7 @@ let second;
 let third;
 menuBtn.addEventListener('click', function () {
     if (!menuOpen) {
+        clearTimeout(sideMenuItemClick)
         clearTimeout(second)
         clearTimeout(third)
         menuOpen = true
@@ -34,3 +40,32 @@ menuBtn.addEventListener('click', function () {
         }, 400)
     }
 })
+
+
+// On click, move span overlay to clicked button, and hide sidemenu (remove the hide feature???)
+
+for (let sideMenuBtn of sideMenuBtns) {
+    sideMenuBtn.addEventListener('click', function () {
+        // Find the top value for the clicked element, minus sidemenu top value
+        let clickedBtn = sideMenuBtn.getBoundingClientRect().top
+        let sidemenuTop = sideMenu.getBoundingClientRect().top
+        let topOffset = clickedBtn - sidemenuTop
+        sideMenuOverlay.style.top = `${topOffset + 5}px`
+        // Close the sidemenu, clearTimeout in case users is rapid clicker
+        menuOpen = false
+        clearTimeout(first)
+        sideMenuItemClick = setTimeout(() => {
+            sideNavbar.classList.remove('side-navbar-active')
+            lineTwo.classList.remove('line2-active-expand')
+            second = setTimeout(() => {
+                menuWrapper.classList.remove('menu-wrapper-active-rotate')
+            }, 250)
+            third = setTimeout(() => {
+                lineTwo.classList.remove('line2-active-expand', 'line2-active-collapse')
+            }, 400)
+        }, 350)
+        // Add statements for http requests for each button clicked, with value in html element
+    })
+
+
+}

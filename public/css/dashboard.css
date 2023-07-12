@@ -19,6 +19,7 @@ body {
         align-items: center;
         width: 50px;
         margin-left: 10px;
+        position: relative;
     }
 
     .menu-button {
@@ -88,7 +89,16 @@ body {
         width: 100%;
         border-radius: 10px;
         position: relative;
+    }
 
+    .overlay {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 5px;
+        border-radius: 10px;
+        background-color: var(--active-color);
+        transition: top .3s ease-in;
     }
 
     .home,
@@ -96,10 +106,6 @@ body {
     .signout {
         width: 100%;
         padding: 10px 0;
-    }
-
-    .home {
-        margin-top: 10px;
     }
 
     .signout {
@@ -120,5 +126,7 @@ body {
     .signout-btn {
         width: 30px;
         height: 30px;
+        position: relative;
+        z-index: 10;
     }
 }
