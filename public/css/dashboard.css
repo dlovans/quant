@@ -31,16 +31,16 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 50px;
-        margin-left: 10px;
         position: relative;
     }
 
     .menu-button {
         position: fixed;
-        margin: 10px 0 0 0;
-        width: 40px;
-        height: 40px;
+        top: 0;
+        left: 0;
+        margin: 10px 0 0 10px;
+        width: 50px;
+        height: 50px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -81,6 +81,9 @@ body {
 
     .side-navbar {
         position: fixed;
+        left: 0;
+        top: 0;
+        margin: 40px 0 0 10px;
         width: 50px;
         height: 100svh;
         max-height: 600px;
@@ -99,10 +102,9 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: var(--tertiary-color);
+        background-color: #263238;
         height: 100%;
         max-height: 540px;
-        margin-top: 60px;
         width: 100%;
         border-radius: 10px;
         position: relative;
@@ -110,11 +112,12 @@ body {
 
     .overlay {
         position: absolute;
+        z-index: 10;
         width: 40px;
         height: 40px;
         top: 5px;
         border-radius: 10px;
-        background-color: var(--active-color);
+        background-color: var(--bg-color);
         transition: top .3s ease-in;
     }
 
@@ -123,8 +126,10 @@ body {
     .add-funds,
     .withdraw-funds,
     .signout {
+        position: relative;
         width: 100%;
         padding: 10px 0;
+        z-index: 11;
     }
 
     .signout {
@@ -150,20 +155,43 @@ body {
         z-index: 10;
     }
 
+
     .portfolio-container {
-        padding-top: 75px;
+        margin-top: 75px;
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
 
-    .portfolio-worth-wrapper {
-        display: flex;
-        flex-direction: column;
-        background-color: var(--tertiary-color);
-        width: 90%;
-        height: 200px;
+    .portfolio-balance {
+        width: 85%;
+        height: 100px;
         border-radius: 10px;
+        background-color: #58975a;
+    }
+
+    .portfolio-profit {
+        width: 85%;
+        height: 100px;
+        border-radius: 10px;
+        background-color: #c4bb65;
+        margin-top: 20px;
+    }
+
+    .portfolio-invested {
+        width: 85%;
+        height: 100px;
+        border-radius: 10px;
+        background-color: #ae65c4;
+        margin-top: 20px;
+    }
+
+    .portfolio-weekly-chart {
+        background-color: var(--tertiary-color);
+        height: 200px;
+        width: 90%;
+        margin-top: 20px;
+        
     }
 }
