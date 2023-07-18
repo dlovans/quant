@@ -27,29 +27,38 @@
     </header>
     <main>
         <div class="portfolio-container">
-            <div class="portfolio-balance">
-                <div class="net-worth-text"></div>
-                <div class="net-worth-digit"></div>
-            </div>
-            <div class="portfolio-profit">
-                <div class="profit">
-                    <div class="profit-text"></div>
-                    <div class="profit-digit"></div>
-                </div>
-                <div class="change-in-percentage">
+            <div class="balance-wrapper">
+                <div class="balance-text">Total Balance</div>
+                <div class="balance-total">$112.422</div>
+                <div class="balance-change">
+                    <div class="change-in-dollars">$10.213</div>
+                    <div class="change-in-percentage">+11%</div>
                 </div>
             </div>
-            <div class="portfolio-invested">
-                <div class="invested-text"></div>
-                <div class="invested-digit"></div>
+            <div class="wallet-wrapper">
+                <button class="dash-deposit-btn">Deposit</button>
+                <button class="dash-withdraw-btn">Withdraw</button>
             </div>
-            <div class="portfolio-weekly-chart">
-
-            </div>
-
-            <div class="funds-wrapper">
-                <div class="add-fund-wrapper"><button class="dash-add-fund-btn">Add Funds</button></div>
-                <div class="withdraw-fund-wrapper"><button class="dash-withdraw-fund-btn">Withdraw Funds</button>
+            <div class="portfolio-cards">
+                <div class="profit-card">
+                    <div class="profit-svg"></div>
+                    <div class="profit-info">
+                        <div class="profit-text"></div>
+                        <div class="profit-number"></div>
+                    </div>
+                </div>
+                <div class="invested-card">
+                    <div class="invested-svg"></div>
+                    <div class="invested-info">
+                        <div class="invested-text"></div>
+                        <div class="invested-number"></div>
+                    </div>
+                </div>
+                <div class="chart-card">
+                </div>
+                <div class="companies-card">
+                    <div class="company-logo"></div>
+                    <div class="company-name"></div>
                 </div>
             </div>
         </div>

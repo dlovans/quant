@@ -14,7 +14,7 @@ body {
 }
 
 .viewOverlay {
-    position: absolute;
+    position: fixed;
     z-index: 9;
     height: 200vh;
     width: 100%;
@@ -83,10 +83,10 @@ body {
         position: fixed;
         left: 0;
         top: 0;
-        margin: 40px 0 0 10px;
+        margin: 65px 0 0 10px;
         width: 50px;
         height: 100svh;
-        max-height: 600px;
+        max-height: 540px;
         display: flex;
         align-items: center;
         z-index: 10;
@@ -164,34 +164,65 @@ body {
         width: 100%;
     }
 
-    .portfolio-balance {
-        width: 85%;
-        height: 100px;
-        border-radius: 10px;
-        background-color: #58975a;
+    .balance-wrapper {
+        width: 100%;
+        text-align: center;
     }
 
-    .portfolio-profit {
-        width: 85%;
-        height: 100px;
-        border-radius: 10px;
-        background-color: #c4bb65;
-        margin-top: 20px;
+    .balance-text {
+        font-size: 12px;
+        color: var(--accent-color);
     }
 
-    .portfolio-invested {
-        width: 85%;
-        height: 100px;
-        border-radius: 10px;
-        background-color: #ae65c4;
-        margin-top: 20px;
+    .balance-total {
+        font-size: 24px;
+        font-weight: 600;
+        margin-top: 10px;
     }
 
-    .portfolio-weekly-chart {
-        background-color: var(--tertiary-color);
-        height: 200px;
-        width: 90%;
+    .balance-change {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    .change-in-dollars {
+        margin-right: 2px;
+    }
+
+    .change-in-percentage {
+        margin-left: 2px;
+        color: var(--primary-color);
+    }
+
+
+    .wallet-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         margin-top: 20px;
-        
+        width: 95%;
+    }
+
+    .dash-deposit-btn,
+    .dash-withdraw-btn {
+        width: 50%;
+        height: 40px;
+        border-radius: 20px;
+        border: none;
+        font-weight: 600;
+    }
+
+    .dash-deposit-btn {
+        margin-right: 5px;
+        background-color: var(--primary-color);
+    }
+
+    .dash-withdraw-btn {
+        margin-left: 5px;
+        /* background-color: var(--error-color); */
+        background-color: transparent;
+        border: 1px solid var(--error-color);
     }
 }
