@@ -39,28 +39,36 @@
                 <button class="dash-deposit-btn">Deposit</button>
                 <button class="dash-withdraw-btn">Withdraw</button>
             </div>
+            <div class="percentage-invested">+11%</div>
             <div class="portfolio-cards">
-                <div class="profit-card">
-                    <div class="svg-box">
-                        <div class="profit-svg"><%- include('../partials/piece-cake.ejs') %></div>
+                <div class="small-cards">
+                    <div class="profit-card">
+                        <div class="svg-box">
+                            <div class="profit-svg"><%- include('../partials/piece-cake') %></div>
+                        </div>
+                        <div class="profit-info">
+                            <div class="profit-text">Profit</div>
+                            <div class="profit-number">$1233</div>
+                        </div>
                     </div>
-                    <div class="profit-info">
-                        <div class="profit-text">Profit</div>
-                        <div class="profit-number">$1233</div>
+                    <div class="invested-card">
+                        <div class="svg-box">
+                            <div class="invested-svg"><%- include('../partials/wallet-in-svg') %></div>
+                        </div>
+                        <div class="invested-info">
+                            <div class="invested-text">Invested</div>
+                            <div class="invested-number">$100K</div>
+                        </div>
                     </div>
                 </div>
-                <div class="invested-card">
-                    <div class="invested-svg"></div>
-                    <div class="invested-info">
-                        <div class="invested-text"></div>
-                        <div class="invested-number"></div>
+                <div class="portfolio-total-card">
+                    <div class="portfolio-svg-box">
+                        <div class="portfolio-total-svg"><%- include('../partials/money-circulation-svg') %></div>
                     </div>
-                </div>
-                <div class="chart-card">
-                </div>
-                <div class="companies-card">
-                    <div class="company-logo"></div>
-                    <div class="company-name"></div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-text">Portfolio Total</div>
+                        <div class="portfolio-number">$112.000</div>
+                    </div>
                 </div>
             </div>
         </div>
