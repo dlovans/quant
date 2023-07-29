@@ -47,7 +47,7 @@ exports.signupUser = async (req, res) => {
 }
 
 
-// Functions to signup through Google, LinkedIn, and Apple Oauth
+// Routes to signup through Google, LinkedIn, and Apple Oauth
 exports.googleSignup = (req, res) => {
 
 }

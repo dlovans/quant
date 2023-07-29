@@ -6,6 +6,7 @@ const sideMenu = document.querySelector('.sidemenu')
 const sideMenuBtns = document.querySelectorAll('.sideMenu-button')
 const sideMenuOverlay = document.querySelector('.overlay')
 const viewOverlay = document.querySelector('.viewOverlay')
+const desktopOverlay = document.querySelector('.desktop-overlay')
 
 // This variable's related to the sidemenu item button click, not hamburger menu
 let sideMenuItemClick;
@@ -50,11 +51,25 @@ menuBtn.addEventListener('click', function (e) {
 // On click, move span overlay to clicked button, hide sidemenu, remove hidden overflowY from body
 for (let sideMenuBtn of sideMenuBtns) {
     sideMenuBtn.addEventListener('click', function () {
+
         // Find the top value for the clicked element, minus sidemenu top value
         let clickedBtn = sideMenuBtn.getBoundingClientRect().top
         let sidemenuTop = sideMenu.getBoundingClientRect().top
         let topOffset = clickedBtn - sidemenuTop
-        sideMenuOverlay.style.top = `${topOffset + 5}px`
+        if (window.screen.width < 768) {
+            sideMenuOverlay.style.top = `${topOffset + 5}px`
+            if (sideMenuBtn.classList.contains("signout")) {
+                desktopOverlay.style.top = `${clickedBtn + 65}px`
+
+            } else {
+                desktopOverlay.style.top = `${clickedBtn - 65}px`
+            }
+
+        } else {
+            desktopOverlay.style.top = `${clickedBtn - 30}px`
+            sideMenuOverlay.style.top = `${topOffset - 25}px`
+
+        }
         // Close the sidemenu, clearTimeout in case users is rapid clicker
         menuOpen = false
         clearTimeout(first)
@@ -92,4 +107,3 @@ viewOverlay.addEventListener('click', function () {
         }, 50)
     }
 })
-

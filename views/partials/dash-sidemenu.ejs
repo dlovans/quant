@@ -1,29 +1,37 @@
 <div class="sidemenu">
     <span class="overlay"></span>
+    <span class="overlay-container">
+        <span class="desktop-overlay"></span>
+    </span>
     <div class="home sideMenu-button">
         <div class="home-svg-wrapper side-wrapper">
             <%- include('../partials/home-btn') %>
         </div>
-    </div>
+        <div class="home-text btn-text">Home</div>
 
+    </div>
     <div class="add-funds sideMenu-button">
         <div class="add-funds-svg-wrapper side-wrapper">
             <%- include('../partials/add-funds-btn') %>
         </div>
+        <div class="add-text btn-text">Deposit</div>
     </div>
     <div class="withdraw-funds sideMenu-button">
         <div class="withdraw-funds-svg-wrapper side-wrapper">
             <%- include('../partials/withdraw-funds-btn') %>
         </div>
+        <div class="withdraw-text btn-text">Withdraw</div>
     </div>
     <div class="settings sideMenu-button">
         <div class="settings-svg-wrapper side-wrapper">
             <%- include('../partials/settings-btn') %>
         </div>
+        <div class="settings-text btn-text">Settings</div>
     </div>
     <div class="signout sideMenu-button">
         <div class="signout-svg-wrapper side-wrapper">
             <%- include('../partials/signout-btn') %>
         </div>
+        <div class="signout-text btn-text">Sign out</div>
     </div>
 </div>
