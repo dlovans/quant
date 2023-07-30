@@ -6,8 +6,6 @@ const sideMenu = document.querySelector('.sidemenu')
 const sideMenuBtns = document.querySelectorAll('.sideMenu-button')
 const sideMenuOverlay = document.querySelector('.overlay')
 const viewOverlay = document.querySelector('.viewOverlay')
-const desktopOverlay = document.querySelector('.desktop-overlay')
-
 // This variable's related to the sidemenu item button click, not hamburger menu
 let sideMenuItemClick;
 
@@ -51,24 +49,16 @@ menuBtn.addEventListener('click', function (e) {
 // On click, move span overlay to clicked button, hide sidemenu, remove hidden overflowY from body
 for (let sideMenuBtn of sideMenuBtns) {
     sideMenuBtn.addEventListener('click', function () {
-
+        sideMenuBtns.forEach(btn => btn.classList.remove('active-ol-btn'))
+        sideMenuBtn.classList.add('active-ol-btn')
         // Find the top value for the clicked element, minus sidemenu top value
         let clickedBtn = sideMenuBtn.getBoundingClientRect().top
         let sidemenuTop = sideMenu.getBoundingClientRect().top
         let topOffset = clickedBtn - sidemenuTop
         if (window.screen.width < 768) {
             sideMenuOverlay.style.top = `${topOffset + 5}px`
-            if (sideMenuBtn.classList.contains("signout")) {
-                desktopOverlay.style.top = `${clickedBtn + 65}px`
-
-            } else {
-                desktopOverlay.style.top = `${clickedBtn - 65}px`
-            }
-
         } else {
-            desktopOverlay.style.top = `${clickedBtn - 30}px`
-            sideMenuOverlay.style.top = `${topOffset - 25}px`
-
+            sideMenuOverlay.style.top = `${clickedBtn - 30}px`
         }
         // Close the sidemenu, clearTimeout in case users is rapid clicker
         menuOpen = false
@@ -87,6 +77,19 @@ for (let sideMenuBtn of sideMenuBtns) {
         // Add statements for http requests for each button clicked, with value in html element
     })
 }
+
+// Make sure the overlay is correctly adjusting position when user changes screen width
+window.addEventListener('resize', function () {
+    let activeElement = document.querySelector('.active-ol-btn')
+    let btnPosition = activeElement.getBoundingClientRect().top
+    if (this.screen.width < 786) {
+        let sidemenuTop = sideMenu.getBoundingClientRect().top
+        let topOffset = btnPosition - sidemenuTop
+        sideMenuOverlay.style.top = `${topOffset + 5}px`
+    } else {
+        sideMenuOverlay.style.top = `${btnPosition - 30}px`
+    }
+})
 
 // close sidemenu if user clicks on transparent overlay that spans the whole page
 viewOverlay.addEventListener('click', function () {
