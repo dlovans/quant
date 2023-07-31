@@ -6,6 +6,11 @@ const sideMenu = document.querySelector('.sidemenu')
 const sideMenuBtns = document.querySelectorAll('.sideMenu-button')
 const sideMenuOverlay = document.querySelector('.overlay')
 const viewOverlay = document.querySelector('.viewOverlay')
+const rippleDeposit = document.querySelector('.ripple-deposit')
+const rippleWithdraw = document.querySelector('.ripple-withdraw')
+const rippleSettings = document.querySelector('.ripple-settings')
+const depositBtn = document.querySelector('.dash-deposit-btn')
+const withdrawBtn = document.querySelector('.dash-withdraw-btn')
 // This variable's related to the sidemenu item button click, not hamburger menu
 let sideMenuItemClick;
 
@@ -109,4 +114,31 @@ viewOverlay.addEventListener('click', function () {
             }, 400)
         }, 50)
     }
+})
+
+// Ripple effect for deposit and withdraw buttons on main content, not sidemenu
+depositBtn.addEventListener('click', function (e) {
+    let clickedTop = e.clientY - e.target.getBoundingClientRect().top
+    let clickedLeft = e.clientX - e.target.getBoundingClientRect().left
+    let rippleEffect = document.createElement('span')
+    rippleEffect.classList.add('ripple')
+    rippleEffect.style.top = `${clickedTop}px`
+    rippleEffect.style.left = `${clickedLeft}px`
+    depositBtn.appendChild(rippleEffect)
+    setTimeout(() => {
+        rippleEffect.remove()
+    }, 500)
+})
+
+withdrawBtn.addEventListener('click', function (e) {
+    let clickedTop = e.clientY - e.target.getBoundingClientRect().top
+    let clickedLeft = e.clientX - e.target.getBoundingClientRect().left
+    let rippleEffect = document.createElement('span')
+    rippleEffect.classList.add('ripple')
+    rippleEffect.style.top = `${clickedTop}px`
+    rippleEffect.style.left = `${clickedLeft}px`
+    withdrawBtn.appendChild(rippleEffect)
+    setTimeout(() => {
+        rippleEffect.remove()
+    }, 500)
 })
