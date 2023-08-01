@@ -26,6 +26,10 @@ body {
     display: block;
 }
 
+.hideModule {
+    display: none;
+}
+
 @media screen and (max-width: 280px) {
     .navigation {
         display: flex;
@@ -434,6 +438,10 @@ body {
             opacity: 0;
         }
     }
+
+    /* Deposit section */
+
+    
 
 }
 

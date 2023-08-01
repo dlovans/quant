@@ -26,52 +26,8 @@
         </nav>
     </header>
     <main>
-        <div class="portfolio-container">
-            <div class="balance-wrapper">
-                <div class="balance-text">Total Balance</div>
-                <div class="balance-total">$112.422</div>
-                <div class="balance-change">
-                    <div class="change-in-dollars">$10.213</div>
-                    <div class="change-in-percentage">+11%</div>
-                </div>
-            </div>
-            <div class="wallet-wrapper">
-                <button class="dash-deposit-btn"><span class="ripple-deposit"></span>Deposit</button>
-                <button class="dash-withdraw-btn"><span class="ripple-withdraw"></span>Withdraw</button>
-            </div>
-            <div class="percentage-invested">+11%</div>
-            <div class="portfolio-cards">
-                <div class="small-cards">
-                    <div class="profit-card">
-                        <div class="svg-box">
-                            <div class="profit-svg"><%- include('../partials/piece-cake') %></div>
-                        </div>
-                        <div class="profit-info">
-                            <div class="profit-text">Profit</div>
-                            <div class="profit-number">$1233</div>
-                        </div>
-                    </div>
-                    <div class="invested-card">
-                        <div class="svg-box">
-                            <div class="invested-svg"><%- include('../partials/wallet-in-svg') %></div>
-                        </div>
-                        <div class="invested-info">
-                            <div class="invested-text">Invested</div>
-                            <div class="invested-number">$100K</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-total-card">
-                    <div class="portfolio-svg-box">
-                        <div class="portfolio-total-svg"><%- include('../partials/money-circulation-svg') %></div>
-                    </div>
-                    <div class="portfolio-info">
-                        <div class="portfolio-text">Portfolio Total</div>
-                        <div class="portfolio-number">$112.000</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <%- include('../partials/dash-portfolio-section') %>
+        <%- include('../partials/dash-deposit-section') %>
     </main>
 
     <script src="/js/dashboard.js"></script>

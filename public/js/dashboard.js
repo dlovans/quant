@@ -11,6 +11,7 @@ const rippleWithdraw = document.querySelector('.ripple-withdraw')
 const rippleSettings = document.querySelector('.ripple-settings')
 const depositBtn = document.querySelector('.dash-deposit-btn')
 const withdrawBtn = document.querySelector('.dash-withdraw-btn')
+const mainSections = document.querySelectorAll('.section')
 // This variable's related to the sidemenu item button click, not hamburger menu
 let sideMenuItemClick;
 
@@ -142,3 +143,13 @@ withdrawBtn.addEventListener('click', function (e) {
         rippleEffect.remove()
     }, 500)
 })
+
+
+function hideModules() {
+    mainSections.forEach(btn => btn.classList.add('hideModule'))
+}
+
+// Remove
+for (let i = 0; i < (sideMenuBtns.length - 1); i++) {
+
+}
